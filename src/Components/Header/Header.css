@@ -28,6 +28,10 @@ header:hover, header.active {
     color: white;
 }
 
+.header-btn-cart a {
+    color: white;
+}
+
 header.active .header-btn-search,
 header:hover .header-btn-search,
 header.active .header-btn-menu,
@@ -37,7 +41,8 @@ header:hover .header-btn-account,
 header.active .header-btn-cart,
 header:hover .header-btn-cart,
 header.active .header-title,
-header:hover .header-title {
+header:hover .header-title,
+header:hover .header-btn-cart a {
     color: black;
     transition: color .5s;
 }

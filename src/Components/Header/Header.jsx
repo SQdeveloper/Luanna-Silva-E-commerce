@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {GoSearch} from 'react-icons/go'
 import {GoPerson} from 'react-icons/go'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {VscMenu} from 'react-icons/vsc'
 import {GrClose} from 'react-icons/gr'
+import InputSearch from '../InputSearch/InputSearch';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {    
+    const openInputSearch = ()=>{
+        const contInputSearch = document.querySelector('.content-input-search')
+
+        contInputSearch.classList.add('active');
+    }
+
     const changeColorHeader = ()=>{
         window.addEventListener('scroll', ()=>{
             const header = document.querySelector("header");            
@@ -20,7 +28,6 @@ const Header = () => {
         })
     }
 
-    changeColorHeader();
     const openMenu = ()=>{
         const bannerMenu = document.querySelector('.banner-menu');
 
@@ -32,6 +39,11 @@ const Header = () => {
 
         bannerMenu.classList.remove('active');
     }
+    
+    useEffect(()=>{
+        changeColorHeader();
+    }, []);
+
 
     return (
         <header>
@@ -40,12 +52,12 @@ const Header = () => {
                     <VscMenu/>                    
                     <span>Menú</span>
                 </button>
-                <button className="header-btn-search">
+                <button onClick={openInputSearch} className="header-btn-search">
                     <GoSearch/>
                     <span>Search</span>
                 </button>
             </div>
-            <a className='header-title' href="#">LUANNA SILVA</a>
+            <Link className='header-title' to={'/'}>LUANNA SILVA</Link>
             <div className="header-right">
                 <button className='header-btn-account'>
                     <GoPerson/>
@@ -53,7 +65,7 @@ const Header = () => {
                 </button>
                 <button className='header-btn-cart'>
                     <AiOutlineShoppingCart/>
-                    <span>Cart</span>
+                    <Link to={'/Cart'}>Cart</Link>
                 </button>
 
             </div>
@@ -78,6 +90,7 @@ const Header = () => {
                     </ul>
                 </div>
             </div>
+            <InputSearch/>
         </header>
     );
 };

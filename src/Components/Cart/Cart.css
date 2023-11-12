@@ -1,0 +1,76 @@
+.cart {
+    display: flex;
+    margin-top: 4rem;
+    border-top: 1px solid #dddcdc;
+}
+
+.cart-left {
+    flex: 4;
+    background-color: #ebebeb;
+    padding: 2rem;
+}
+
+.cart-section-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;    
+}
+
+.cart-section-title h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.cart-section-title a {
+    display: block;
+    height: fit-content;
+    border-bottom: 1px solid black;    
+    padding-bottom: .2rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.cart-right {
+    flex: 2;    
+}
+
+.cart-right-info-price {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 1px solid #dddcdc;
+}
+
+.cart-right-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.cart-btn-advance-payment {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    margin-top: .8rem;
+    border: 1px solid black;
+    transition: background-color .3s, color .3s;
+    font-size: .85rem;
+}
+
+.cart-btn-advance-payment:hover {
+    background-color: white;    
+    color: black;
+}
+
+.cart-btn-paypal {
+    border-radius: 2rem;
+    width: 100%;
+    height: 3rem;
+    background-image: linear-gradient(98deg,#193c7b,#009cde 93%);
+}
