@@ -8,22 +8,32 @@ import InputSearch from '../InputSearch/InputSearch';
 import { Link } from 'react-router-dom';
 import './Header.css'
 
-const Header = () => {    
+const Header = ({activeAnimation}) => {    
+    
     const openInputSearch = ()=>{
         const contInputSearch = document.querySelector('.content-input-search')
 
         contInputSearch.classList.add('active');
     }
 
-    const changeColorHeader = ()=>{
-        window.addEventListener('scroll', ()=>{
-            const header = document.querySelector("header");            
+    const changeColorHeader = ()=>{             
+        const header = document.querySelector("header");                        
 
+        //Si la variable activeAnimation es false, entonces no se activa
+        //el cambio de color del header cuando se hace scroll
+        //Lo que hacemos es activar desde un principio el color nego en las palabras del header.
+        if(!activeAnimation) {
+            header.classList.add('active');            
+            return;
+        }        
+
+        //Cuando hacemos scroll se va a cambiar el color del background y de las letras del header
+        window.addEventListener('scroll', ()=>{
             if(scrollY === 0) {
-                header.classList.remove('active');
+                header.classList.remove('active');//Activamos la clase active en el elemento header
             }
             else {
-                header.classList.add('active');
+                header.classList.add('active');//Desactivamos la clase active en el elemento header
             }        
         })
     }
@@ -40,7 +50,7 @@ const Header = () => {
         bannerMenu.classList.remove('active');
     }
     
-    useEffect(()=>{
+    useEffect(()=>{        
         changeColorHeader();
     }, []);
 
@@ -61,13 +71,12 @@ const Header = () => {
             <div className="header-right">
                 <button className='header-btn-account'>
                     <GoPerson/>
-                    <span>Account</span>
+                    <Link to='/Account'>Account</Link>
                 </button>
                 <button className='header-btn-cart'>
                     <AiOutlineShoppingCart/>
                     <Link to={'/Cart'}>Cart</Link>
                 </button>
-
             </div>
 
             <div className="banner-menu">                

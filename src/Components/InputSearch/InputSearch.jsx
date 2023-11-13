@@ -4,9 +4,9 @@ import {GrClose} from 'react-icons/gr'
 import './InputSearch.css'
 
 const InputSearch = () => {
-    const contInputSearch = document.querySelector('.content-input-search')
-
+    
     const closeInputSearch = ()=>{
+        const contInputSearch = document.querySelector('.content-input-search')
         contInputSearch.classList.remove('active');
     }
 
