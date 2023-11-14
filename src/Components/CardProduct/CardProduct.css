@@ -1,0 +1,44 @@
+.cardProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .7rem;
+    width: 200px;
+}
+
+.cardProduct-contentImage {
+    position: relative;
+    height: 19rem;
+    width: 100%;
+}
+
+.cardProduct-contentImage .cardProduct-first-image {
+    z-index:2;
+    background-color: blue;
+}
+
+.cardProduct-contentImage:hover > .cardProduct-first-image {
+    opacity: 0;
+}
+
+.cardProduct-contentImage img {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+
+.cardProduct-colors {
+    display: flex;
+    gap: .6rem;
+}
+
+.cardProduct-color {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: lightblue;
+}

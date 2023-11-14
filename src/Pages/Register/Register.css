@@ -1,0 +1,49 @@
+.content-createAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.content-createAccount h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;    
+    font-size: 2rem;
+}
+
+.content-createAccount form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 450px;    
+}
+
+.content-createAccount label {
+    margin-bottom: 1rem;
+}
+
+.content-createAccount input {
+    border: 1px solid #c0c0c0;
+    height: 2.5rem;
+    border-radius: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-createAccount button {
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    width: fit-content;
+    padding: 0 1rem;
+    margin: 0 auto;
+    border-radius: .2rem;
+    font-size: 1rem;    
+    border: 1px solid black;
+    transition: background-color .3s, color .3s;
+}
+
+.content-createAccount button:hover {
+    background-color: white;
+    color: black;
+}

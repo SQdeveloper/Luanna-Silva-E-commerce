@@ -1,0 +1,28 @@
+.bannerCategory {
+    margin-top: 3rem;
+    padding: 0 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.bannerCategory-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.bannerCategory a {
+    margin: .3rem auto;
+    font-size: .9rem;
+    color: rgb(196, 10, 10);
+    border-bottom: 1px solid rgb(196, 10, 10);
+    padding-bottom: .2rem;
+    display: block;
+    width: fit-content;    
+}
+
+.bannerCategory-products {
+    width: 100%;
+    background-color: lightblue;
+    height: 10rem;
+    margin-top: 2rem;
+}

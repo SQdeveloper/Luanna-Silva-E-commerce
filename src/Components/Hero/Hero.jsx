@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css'
 import Header from '../Header/Header';
+import BannerCategory from '../BannerCategory/BannerCategory';
 
 
 const Hero = () => {
@@ -18,6 +19,7 @@ const Hero = () => {
                     </button>
                 </div>
             </section>
+            <BannerCategory/>
         </>
     );
 };

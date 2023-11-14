@@ -10,12 +10,13 @@ header {
     height: 4.5rem;
     background-color: transparent;
     z-index: 3;
+    border-bottom: 1px solid transparent;
 }
 
 header:hover, header.active {
     background-color: white;
-    transition: background-color .5s;
-    border-bottom: 1px solid #dddcdc;
+    border-color: #dddcdc;
+    transition: background-color .5s, border-color .5s;
 }
 
 .header-left, .header-right {
