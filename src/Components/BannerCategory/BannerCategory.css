@@ -1,6 +1,5 @@
 .bannerCategory {
-    margin-top: 3rem;
-    padding: 0 2.5rem;
+    padding: 3rem 2.5rem;
     width: 100%;
     text-align: center;
 }
@@ -21,8 +20,9 @@
 }
 
 .bannerCategory-products {
-    width: 100%;
-    background-color: lightblue;
-    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    ;
+    gap: 1.5rem;
+    width: 100%;    
     margin-top: 2rem;
 }

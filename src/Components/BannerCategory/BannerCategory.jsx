@@ -1,18 +1,19 @@
 import React, { useContext } from 'react';
-import './BannerCategory.css';
 import CardProduct from '../CardProduct/CardProduct';
 import { ShopContext } from '../../Context/ShopContext';
+import './BannerCategory.css';
 
-const BannerCategory = () => {
+const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     const all_products = useContext(ShopContext).data;        
-
+    let filteredProducts = all_products.filter(product => product.category.includes(categorySelected))
+    filteredProducts = filteredProducts.slice(0,amountToShow);
     return (
-        <section className='bannerCategory'>
-            <h2 className='bannerCategory-title'>title</h2>
+        <section className='bannerCategory' style={{backgroundColor:bgColor}}>
+            <h2 className='bannerCategory-title'>{title}</h2>
             <a href="">View All</a>
             <div className="bannerCategory-products">                
-                {all_products.map(product=>(
-                    <CardProduct name={product.name} colors={product.colors} price={product.price} image={product.image}/>
+                {filteredProducts.map(product=>(
+                    <CardProduct key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>
                 ))}
             </div>
         </section>
