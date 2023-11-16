@@ -1,12 +1,13 @@
 import React from 'react';
 import './CardCategory.css';
 
-const CardCategory = () => {
+const CardCategory = ({bgImage, description, titleCategory}) => {
     return (
         <div className='cardCategory'>
+            <img className='cardCategory-img' src={bgImage} alt="img-category" />
             <div className="cardCategory-text">
-                <span className='cardCategory-span'>We love the dress</span>
-                <h2 className='cardCategory-title'>Vestidos y Enterizos</h2>
+                <span className='cardCategory-span'>{description}</span>
+                <h2 className='cardCategory-title'>{titleCategory}</h2>
             </div>
         </div>
     );

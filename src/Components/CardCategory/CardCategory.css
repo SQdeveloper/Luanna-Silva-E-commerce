@@ -1,17 +1,35 @@
 .cardCategory {
     position: relative;
-    height: 22rem;
+    height: 25rem;
+    border-radius: .1rem;
+    width: 100%;    
+    overflow: hidden;
+}
+
+.cardCategory::after {
+    content: '';
+    position: absolute;
     width: 100%;
-    background-color: lightcoral;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 / .4)
+}
+
+.cardCategory-img {
+    width: 100%;    
 }
 
 .cardCategory-text {
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 100%;
+    padding: 1rem;
     transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .cardCategory-span {

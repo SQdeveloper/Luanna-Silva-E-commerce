@@ -4,19 +4,20 @@ import Account from './Pages/Account/Account'
 import Cart from './Pages/Cart/Cart'
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        
+      <BrowserRouter>        
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/Cart' element={<Cart/>}/>
           <Route path='/Account' element={<Account/>}/>
           <Route path='/Register' element={<Register/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>      
     </>
   )

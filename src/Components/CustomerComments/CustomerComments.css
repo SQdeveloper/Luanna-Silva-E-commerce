@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     padding: 3.5rem 2.5rem;
-    background-color: #f7e7ff;    
+    background-color: #faf3fd;    
 }
 
 .CustomerComments-info {
@@ -26,7 +26,6 @@
 }
 
 .CustomerComments-contImg {
-
     display: block;
     height: 500px;
     width: 25rem; 
