@@ -86,15 +86,15 @@ const Header = ({activeAnimation}) => {
                         <span>Close</span>
                     </button>
                     <ul className='content-menu-list'>
-                        <li>New</li>                        
-                        <li>Women</li>
-                        <li>Men</li>
-                        <li>Kids</li>
-                        <li>Spring</li>
-                        <li>Summer</li>
-                        <li>Winter</li>
-                        <li>Autumn</li>
-                        <li>Bags</li>
+                        <li><a href="">New</a></li>                        
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><a href="">Spring</a></li>
+                        <li><a href="">Summer</a></li>
+                        <li><a href="">Winter</a></li>
+                        <li><a href="">Autumn</a></li>
+                        <li><a href="">Bags</a></li>
                     </ul>
                 </div>
             </div>

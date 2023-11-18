@@ -1,9 +1,13 @@
 .cardCategory {
     position: relative;
-    height: 25rem;
+    height: 27rem;
     border-radius: .1rem;
     width: 100%;    
     overflow: hidden;
+}
+
+.cardCategory:hover > .cardCategory-img {
+    transform: scale(1.1);
 }
 
 .cardCategory::after {
@@ -18,6 +22,7 @@
 
 .cardCategory-img {
     width: 100%;    
+    transition: transform .3s;
 }
 
 .cardCategory-text {

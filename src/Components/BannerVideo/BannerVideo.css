@@ -7,7 +7,10 @@
 
 .bannerVideo-video {
     width: 100%;
+}
 
+.bannerVideo-span {
+    font-size: 1.3rem;
 }
 
 .bannerVideo-contText {
@@ -23,15 +26,22 @@
 }
 
 .bannerVideo-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 500;
 }
 
 .bannerVideo-ancle {    
-    padding: .5rem 1rem;
+    padding: .7rem 1.1rem;
     text-transform: uppercase;
     border-radius: .2rem;
     color: black;
     background-color: white;
-    width: fit-content;
+    width: fit-content;    
+    transition: background-color .3s, color .3s;
+    font-size: .95rem;
+}
+
+.bannerVideo-ancle:hover {
+    background-color: black;
+    color: white;    
 }

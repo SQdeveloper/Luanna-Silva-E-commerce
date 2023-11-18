@@ -6,7 +6,7 @@ const CardProduct = ({name, colors, price, image}) => {
         <div className='cardProduct'>
             <div className="cardProduct-contentImage">
                 <img className='cardProduct-first-image' src={image} alt="image-of-model" />
-                <img src="" alt="image-of-model" />
+                {/* <div className="cardProduct-second-card"></div> */}
             </div>
             <span className="cardProduct-title">{name}</span>
             <span className="cardProduct-price">$/ {price}.00</span>

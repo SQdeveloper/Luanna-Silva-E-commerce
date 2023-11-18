@@ -23,12 +23,15 @@
     font-size: .9rem;
 }
 
+.footer-text-lh {
+    line-height: 1.5625rem;
+}
+
 .footer-group {
     display: flex;
     flex-direction: column;    
     max-width: 20rem;
-    gap: 1.5rem;
-    
+    gap: 1.5rem;    
 }
 
 .footer-ul {
@@ -58,4 +61,17 @@
     font-weight: 500;
     padding: 0 1.5rem;
     text-transform: uppercase;
+}
+
+.footer-img-book {
+    width: 120px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: .8rem;
+}
+
+.footer-ancle-redes {
+    color: white;
 }

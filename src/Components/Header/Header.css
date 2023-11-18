@@ -2,12 +2,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2.2rem;
-    height: 4.5rem;
+    height: 5rem;
     background-color: transparent;
     z-index: 3;
     border-bottom: 1px solid transparent;
@@ -21,13 +21,14 @@ header:hover, header.active {
 
 .header-left, .header-right {
     display: flex;
-    gap: 1.2rem;    
+    gap: 1.2rem;        
 }
 
 .header-btn-search, .header-btn-menu, .header-btn-account, .header-btn-cart {
     display: flex;
     gap: .5rem;    
     color: white;
+    font-size: .9rem;
 }
 
 .header-btn-cart a, .header-btn-account a {
@@ -56,7 +57,7 @@ header:hover .header-btn-account a {
 .header-title {
     color: white;
     font-weight: 600;    
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     letter-spacing: .2rem;
 }
 
@@ -96,6 +97,8 @@ header:hover .header-btn-account a {
     display: flex;
     gap: .5rem;
     align-items: center;
+    font-weight: 500;
+    color: black;
 }
 
 .content-menu-list {
@@ -106,6 +109,31 @@ header:hover .header-btn-account a {
 }
 
 .content-menu-list li {
+    display: block;    
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
+}
+
+.content-menu-list li a {
+    position: relative;    
+    color: black;
+    display: block;
+    width: fit-content;
+}
+
+.content-menu-list li:hover a::after {
+    width: 100%;    
+}
+
+.content-menu-list li a::after {
+    content: '';    
+    width: 0;    
+    height: .15rem;    
+    display: block;
+    position: absolute;    
+    bottom: 0;
+    left: 0;    
+    background-color: black;
+    transform-origin: left;
+    transition: width .3s;
 }

@@ -5,7 +5,6 @@ import BannerVideo from '../../Components/BannerVideo/BannerVideo';
 import Hero from '../../Components/Hero/Hero';
 import CardCategory from '../../Components/CardCategory/CardCategory';
 import CustomerComments from '../../Components/CustomerComments/CustomerComments';
-import Slider from '../../Components/Slider/Slider';
 import './Home.css';
 
 const Home = () => {
