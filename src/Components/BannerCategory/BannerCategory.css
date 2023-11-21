@@ -9,7 +9,7 @@
     font-weight: 500;
 }
 
-.bannerCategory a {
+.bannerCategory > a {
     margin: .3rem auto;
     font-size: .9rem;
     color: rgb(156, 3, 3);

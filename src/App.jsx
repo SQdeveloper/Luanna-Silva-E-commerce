@@ -5,6 +5,7 @@ import Cart from './Pages/Cart/Cart'
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
+import DetailsProduct from './Pages/DetailsProduct/DetailsProduct'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/Cart' element={<Cart/>}/>
           <Route path='/Account' element={<Account/>}/>
           <Route path='/Register' element={<Register/>}/>
+          <Route path='/Product/:id' element={<DetailsProduct/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>      

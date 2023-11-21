@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CardProduct.css';
+import { Link } from 'react-router-dom';
 
-const CardProduct = ({name, colors, price, image}) => {
+const CardProduct = ({id, category, name, colors, price, image}) => {
+
     return (
-        <div className='cardProduct'>
+        <Link to={`/Product/${id}`} className='cardProduct'>
             <div className="cardProduct-contentImage">
-                <img className='cardProduct-first-image' src={image} alt="image-of-model" />
-                {/* <div className="cardProduct-second-card"></div> */}
+                <img className='cardProduct-first-image' src={image} alt="image-of-model" />                
             </div>
             <span className="cardProduct-title">{name}</span>
             <span className="cardProduct-price">$/ {price}.00</span>
@@ -15,7 +16,7 @@ const CardProduct = ({name, colors, price, image}) => {
                 <div className="cardProduct-color" style={{backgroundColor:colors[1]}}></div>
                 <div className="cardProduct-color" style={{backgroundColor:colors[2]}}></div>
             </div>
-        </div>
+        </Link>
     );
 };
 

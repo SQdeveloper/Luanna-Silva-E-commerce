@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className="footer-group">
                 <h2 className='footer-title'>Links Of Interest</h2>
-                <ul className='footer-ul'>
+                <ul className='footer-ul footer-nav'>
                     <li>
                         <a className='footer-text' href="">Blog</a>
                     </li>

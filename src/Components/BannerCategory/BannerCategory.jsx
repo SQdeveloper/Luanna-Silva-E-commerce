@@ -12,8 +12,8 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
             <h2 className='bannerCategory-title'>{title}</h2>
             <a href="">View All</a>
             <div className="bannerCategory-products">                
-                {filteredProducts.map(product=>(
-                    <CardProduct key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>
+                {filteredProducts.map(product=>(                    
+                    <CardProduct id={product.id} category={product.category} key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>
                 ))}
             </div>
         </section>
