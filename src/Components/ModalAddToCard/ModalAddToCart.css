@@ -1,0 +1,82 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgb(0 0 0 / .85);
+    width: 100%;
+    height: 100vh;    
+}
+
+.modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 32rem;
+    padding: 2.5rem 3rem;
+    background-color: white;
+    z-index: 3;    ;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddcdc;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.modal-body {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0;    
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.modal-imageProduct {
+    width: 8rem;
+    height: 8rem;
+}
+
+.modal-button-followShoping, .modal-button-view {
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 100%;
+    border-radius: 2rem;    
+    font-weight: 500;
+    font-size: .85rem;
+}
+
+.modal-button-view {
+    background-color: black;
+    color: white;
+    margin-bottom: .5rem;
+    border: 1px solid black;
+    transition: background-color .3s, color .3s;
+}
+
+.modal-button-view:hover {
+    background-color: white;    
+    color: black;
+}
+
+.modal-button-followShoping {    
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    transition: background-color .3s;
+}
+
+.modal-button-followShoping:hover {
+    background-color: #dddcdc;    
+}

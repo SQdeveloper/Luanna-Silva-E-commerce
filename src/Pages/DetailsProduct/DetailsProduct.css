@@ -29,7 +29,7 @@
 }
 
 .detailProduct-info-price {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: .5rem;
     display: block;
 }
@@ -48,7 +48,7 @@
 
 .detailProduct-info-subtitle {
     margin: 2rem 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -128,18 +128,18 @@
     width: fit-content;
     padding: .5rem 1rem;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: .2rem;
 }
 
 .detailProduct-info-contAmount-btn-icon {
-    width: 20px;
-    height: 20px;    
+    width: 18px;
+    height: 18px;    
 }
 
 .detailProduct-info-btn-addCart, .detailProduct-info-btn-buy {
     border: 1px solid black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
     display: grid;
     place-items: center;

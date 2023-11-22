@@ -7,6 +7,7 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     const all_products = useContext(ShopContext).data;        
     let filteredProducts = all_products.filter(product => product.category.includes(categorySelected))
     filteredProducts = filteredProducts.slice(0,amountToShow);
+    
     return (
         <section className='bannerCategory' style={{backgroundColor:bgColor}}>
             <h2 className='bannerCategory-title'>{title}</h2>

@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../../Components/Header/Header';
 import CardProductCart from '../../Components/CardProductCart/CardProductCart';
 import {LiaCcAmazonPay} from 'react-icons/lia'
 import {PiTruckLight} from 'react-icons/pi'
 import {MdOutlineCurrencyExchange} from 'react-icons/md'
 import {useState} from 'react';
+import { useParams } from 'react-router-dom';
 import './Cart.css';
+import { ShopContext } from '../../Context/ShopContext';
 
 const Cart = () => {
-    const [amount, setAmount] = useState(1);
-    const [price, setPrice]   = useState(5000);
+    const {id} = useParams();    
+    const all_products = useContext(ShopContext).data;
+    const product = all_products.filter(product => Number(product.id) === Number(id))[0];        
+    const [amount, setAmount] = useState(1);    
+    const [price, setPrice]   = useState(product.price);
 
     return (
         <>
@@ -20,7 +25,7 @@ const Cart = () => {
                     <h2>My Shopping Cart</h2>
                     <a href="">Continue shopping</a>
                 </section>
-                <CardProductCart setAmount={setAmount} amount={amount} price={price}/>
+                <CardProductCart product={product} setAmount={setAmount} amount={amount} price={price}/>
             </div>
             <div className="cart-right">
                 <div className="cart-right-info-price">

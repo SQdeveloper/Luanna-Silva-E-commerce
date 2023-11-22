@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: start;
     gap: .7rem;        
+    color: black;
 }
 
 .cardProduct-contentImage {

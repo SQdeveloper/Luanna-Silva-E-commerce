@@ -6,9 +6,8 @@ import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
 import './CardProductCart.css';
 
-const CardProductCart = ({setAmount, amount, price}) => {
+const CardProductCart = ({product, setAmount, amount, price}) => {
     
-
     const increaseAmount = ()=>{
         setAmount(amount => amount+1);
     }
@@ -22,12 +21,12 @@ const CardProductCart = ({setAmount, amount, price}) => {
         <div className='cardProductCart'>
             <div className="cardProductCart-contImg">
                 <LiaSearchPlusSolid className='cardProductCart-img-lupa'/>
-                <img src="" alt="" />
+                <img className='cardProductCart-image-main' src={product.image} alt="image-product" />
             </div>        
             <div className="cardProductCart-info">
                 <div className="cardProductCart-info-header">
                     <span className="cardProductCart-info-header-title">
-                        Bolsa Coussin PM
+                        {product.name}
                     </span>
                 </div>
                 <div className="cardProductCart-info-body">
