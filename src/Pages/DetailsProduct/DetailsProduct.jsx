@@ -4,8 +4,9 @@ import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
 import { useParams } from 'react-router-dom';
 import {ShopContext} from '../../Context/ShopContext';
-import './DetailsProduct.css';
 import ModalAddToCart from '../../Components/ModalAddToCard/ModalAddToCart';
+import './DetailsProduct.css';
+import useLocalStorage from '../../Hooks/useLocalStorage';
 
 const DetailsProduct = () => {
     let {id} = useParams();
@@ -13,8 +14,23 @@ const DetailsProduct = () => {
     const selectedProduct = all_products.filter(product => Number(product.id) === Number(id))[0];        
     const [selectedColor, setSelectedColor] = useState(selectedProduct.colors[0]);    
     const [amount, setAmount] = useState(1);
-    const [isOpenModal, setIsOpenModal] = useState(false);
+    const [isOpenModal, setIsOpenModal] = useState(false);    
+    const [listProductCart, setListProductCart] = useLocalStorage('listProductCart', []);
 
+    const handleBtnAddToCart = ()=>{
+        openModal();
+
+        try {
+            console.log('here: ', listProductCart);
+            const newList = [...listProductCart];
+            newList.push(selectedProduct);
+            setListProductCart(selectedProduct);
+            window.localStorage.setItem('listProductCart', JSON.stringify(newList));
+        }
+        catch(err) {
+            console.log(err);
+        }
+    }
     //Función que abre el modal cuando se hace click en el boton agregar al carrito
     const openModal = ()=>{
         setIsOpenModal(true);
@@ -106,7 +122,7 @@ const DetailsProduct = () => {
                         <span>{amount}</span>
                         <button onClick={increaseAmount}><BsPlusLg className='detailProduct-info-contAmount-btn-icon'/></button>
                     </div>
-                    <button onClick={openModal} className='detailProduct-info-btn-addCart'>ADD TO CART</button>
+                    <button onClick={handleBtnAddToCart} className='detailProduct-info-btn-addCart'>ADD TO CART</button>
                     <a className='detailProduct-info-btn-buy' href="">BUY NOW</a>
                 </section>
             </div>
