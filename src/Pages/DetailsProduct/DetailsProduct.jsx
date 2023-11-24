@@ -5,8 +5,8 @@ import {BsPlusLg} from 'react-icons/bs'
 import { useParams } from 'react-router-dom';
 import {ShopContext} from '../../Context/ShopContext';
 import ModalAddToCart from '../../Components/ModalAddToCard/ModalAddToCart';
-import './DetailsProduct.css';
 import useLocalStorage from '../../Hooks/useLocalStorage';
+import './DetailsProduct.css';
 
 const DetailsProduct = () => {
     let {id} = useParams();
@@ -18,13 +18,58 @@ const DetailsProduct = () => {
     const [listProductCart, setListProductCart] = useLocalStorage('listProductCart', []);
 
     const handleBtnAddToCart = ()=>{
+        let newProductCart;
+        //Creo una lista temporal para almacenar todos
+        //los productos que estan en el carrito
+        let newList = [...listProductCart];
         openModal();
 
         try {
-            console.log('here: ', listProductCart);
-            const newList = [...listProductCart];
-            newList.push(selectedProduct);
-            setListProductCart(selectedProduct);
+            //Verifico si existe un producto que ya este en el carrito
+            // const repeatedProduct = listProductCart?.filter(product=> product.id === selectedProduct.id);
+            let repeatedProduct = null;
+            listProductCart.forEach((product, index)=>{
+                if(product.id === selectedProduct.id){
+                    console.log("dentro del IF")               
+                    repeatedProduct = index;
+                }
+                console.log("FUERA DEL IF: ", null)               
+                // return null;
+            })
+            console.log('VALUE OF REPEATPRODUCT', repeatedProduct)
+            if(repeatedProduct !== null) {       
+                console.log("entroooooooooo")
+                let dfs = listProductCart.length != 0 ? listProductCart[repeatedProduct].amount : 0;
+                let newAmount = amount + dfs;
+                newProductCart = {
+                    'id': selectedProduct.id,
+                    'name': selectedProduct.name,
+                    'price': selectedProduct.price,
+                    'image': selectedProduct.image,
+                    'amount': newAmount,
+                    'selectedColor': selectedColor
+                }         
+                newList.splice(repeatedProduct,1, newProductCart);
+            }
+            else {
+                //Hago un array y le agrego toda la 
+                //información que se necesita para mostrar
+                //los productos del cart                
+                newProductCart = {
+                    'id': selectedProduct.id,
+                    'name': selectedProduct.name,
+                    'price': selectedProduct.price,
+                    'image': selectedProduct.image,
+                    'amount': amount,
+                    'selectedColor': selectedColor
+                }
+                //Agrego el nuevo producto al carrito a la lista temporal
+                newList.push(newProductCart);
+            }
+            
+            //Guardo el valor en el estado listProductCart
+            setListProductCart(newList);
+            //
             window.localStorage.setItem('listProductCart', JSON.stringify(newList));
         }
         catch(err) {

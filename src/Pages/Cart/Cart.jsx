@@ -20,8 +20,7 @@ const Cart = () => {
     useEffect(()=>{
         let list = window.localStorage.getItem('listProductCart');
         list = JSON.parse(list);
-        setListProductCart(list);
-        console.log(list)
+        setListProductCart(list);        
     }, []);
 
     return (
@@ -32,11 +31,10 @@ const Cart = () => {
                 <section className="cart-section-title">
                     <h2>My Shopping Cart</h2>
                     <a href="">Continue shopping</a>
-                </section>
-                
+                </section>                
                 {
-                    listProductCart.map(pr=>(
-                        <CardProductCart key={pr.id} product={pr} setAmount={setAmount} amount={amount} price={price}/>
+                    listProductCart?.map(pr=>(
+                        <CardProductCart key={pr.id} product={pr} setAmount={setAmount} amount={pr.amount} price={price}/>
                     ))
                 }
             </div>
