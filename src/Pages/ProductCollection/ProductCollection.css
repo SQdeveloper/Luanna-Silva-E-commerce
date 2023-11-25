@@ -1,0 +1,112 @@
+.productCollection {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.productCollection-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.productCollection-groups {
+    position: relative;
+    display: flex;      
+    height: 220vh;
+}
+
+.productCollection-group-filters {    
+    position: sticky;        
+    top: 0;
+    left: 0;    
+    height: fit-content;    
+    width: 22rem;
+    background-color: lightcoral;        
+    padding: 2rem;
+}
+
+.productCollection-group-filters ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.productCollection-group-filters li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.productCollection-group-products {
+    flex: 1;
+    background-color: lightblue;
+}
+
+.productCollection-filter-subtitle {
+    margin-bottom: .3rem;
+}
+
+.group-filter-price {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.productCollection-filter-price {    
+    border: 1px solid #dddcdc;
+    height: 2.5rem;
+    padding: 0 .7rem;
+    width: 7rem;
+    border-radius: .2rem;
+}
+
+.productCollection-filter-price::placeholder {
+    color: black;
+}
+
+.productCollection-filter-talla input {    
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;    
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.productCollection-filter-talla {
+    position: relative;
+}
+
+.productCollection-filter-talla span {
+    /* cursor: pointer; */
+    margin-left: 1.8rem;
+}
+
+.productCollection-filter-talla span::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: .2rem;
+    border-radius: .2rem;
+}
+
+.productCollection-filter-talla input:checked + span::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: white;
+    filter: invert(100%);
+    background-image: url('../../assets/img/icons/check-lg.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: .2rem;
+}

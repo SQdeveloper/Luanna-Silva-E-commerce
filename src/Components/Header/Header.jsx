@@ -86,7 +86,7 @@ const Header = ({activeAnimation}) => {
                         <span>Close</span>
                     </button>
                     <ul className='content-menu-list'>
-                        <li><a href="">New</a></li>                        
+                        <li><Link to='/Collection'>New</Link></li>                        
                         <li><a href="">Women</a></li>
                         <li><a href="">Men</a></li>
                         <li><a href="">Kids</a></li>

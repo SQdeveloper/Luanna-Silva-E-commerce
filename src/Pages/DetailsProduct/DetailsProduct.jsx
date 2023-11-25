@@ -17,70 +17,76 @@ const DetailsProduct = () => {
     const [isOpenModal, setIsOpenModal] = useState(false);    
     const [listProductCart, setListProductCart] = useLocalStorage('listProductCart', []);
 
+    //Creo un objeto que tenga toda la información necesaria para mostrar en el carrito
+    const createProductObject = (_amount)=>{
+        const productObject = {
+            'id': selectedProduct.id,
+            'name': selectedProduct.name,
+            'price': selectedProduct.price,
+            'image': selectedProduct.image,
+            'amount': _amount,
+            'selectedColor': selectedColor
+        }
+
+        return productObject;
+    }
+
+    //Función que se ejecuta cuando se hace click al btn Add to Cart
     const handleBtnAddToCart = ()=>{
-        let newProductCart;
-        //Creo una lista temporal para almacenar todos
-        //los productos que estan en el carrito
-        let newList = [...listProductCart];
+        //Abro el modal que muestra el product que es agregado al carrito
         openModal();
+        let newProductCart;
+        //Creo una lista temporal para almacenar todos los productos que estan en el carrito
+        let newList = [...listProductCart];
 
         try {
+            //Variable para almacenar el index del producto repetido
+            let indexRepeatedProduct = null;
+            
             //Verifico si existe un producto que ya este en el carrito
-            // const repeatedProduct = listProductCart?.filter(product=> product.id === selectedProduct.id);
-            let repeatedProduct = null;
+            //y obtengo el index(position) y lo guardo en la variable indexRepeatedProduct
             listProductCart.forEach((product, index)=>{
-                if(product.id === selectedProduct.id){
-                    console.log("dentro del IF")               
-                    repeatedProduct = index;
-                }
-                console.log("FUERA DEL IF: ", null)               
-                // return null;
+                if(product.id === selectedProduct.id){                    
+                    indexRepeatedProduct = index;//Guardo el index del producto repetido
+                }                
             })
-            console.log('VALUE OF REPEATPRODUCT', repeatedProduct)
-            if(repeatedProduct !== null) {       
-                console.log("entroooooooooo")
-                let dfs = listProductCart.length != 0 ? listProductCart[repeatedProduct].amount : 0;
-                let newAmount = amount + dfs;
-                newProductCart = {
-                    'id': selectedProduct.id,
-                    'name': selectedProduct.name,
-                    'price': selectedProduct.price,
-                    'image': selectedProduct.image,
-                    'amount': newAmount,
-                    'selectedColor': selectedColor
-                }         
-                newList.splice(repeatedProduct,1, newProductCart);
+
+            if(indexRepeatedProduct !== null) {     
+                //Variable que contiene la cantidad de ropa anterior           
+                let lastAmount = listProductCart[indexRepeatedProduct].amount;
+                //Variable que contiene la nueva cantidad que se mostrar en el carrito, para eso sumamos 
+                //la antidad anterior(lastAmount) con la cantidad actual o nueva(amount)
+                let newAmount = amount + lastAmount;
+                
+                //Creo un array y le agrego toda la información que se necesita para mostrar los productos del cart                
+                newProductCart = createProductObject(newAmount);
+                
+                //Introduzco el producto actualizado(newProductCart) en el lista(newList)
+                //y en la misma posición(indexRepeatedProduct) en la que se encontraba
+                newList.splice(indexRepeatedProduct,1, newProductCart);
             }
             else {
-                //Hago un array y le agrego toda la 
-                //información que se necesita para mostrar
-                //los productos del cart                
-                newProductCart = {
-                    'id': selectedProduct.id,
-                    'name': selectedProduct.name,
-                    'price': selectedProduct.price,
-                    'image': selectedProduct.image,
-                    'amount': amount,
-                    'selectedColor': selectedColor
-                }
+                //Creo un array y le agrego toda la información que se necesita para mostrar los productos del cart                
+                newProductCart = createProductObject(amount);
+                
                 //Agrego el nuevo producto al carrito a la lista temporal
                 newList.push(newProductCart);
             }
             
-            //Guardo el valor en el estado listProductCart
-            setListProductCart(newList);
-            //
-            window.localStorage.setItem('listProductCart', JSON.stringify(newList));
+            //Guardo el valor en el estado listProductCart y también lo guardo en el localStorage
+            setListProductCart(newList);                        
         }
         catch(err) {
             console.log(err);
         }
     }
+
     //Función que abre el modal cuando se hace click en el boton agregar al carrito
     const openModal = ()=>{
         setIsOpenModal(true);
     }
 
+    //Función que cierra el modal
     const closeModal = ()=>{
         setIsOpenModal(false);
     }
