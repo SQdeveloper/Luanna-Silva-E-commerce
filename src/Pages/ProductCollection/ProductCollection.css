@@ -1,28 +1,29 @@
 .productCollection {
     width: 100%;
     margin-top: 5rem;
+    padding: 3rem 0;
+    text-align: center;
 }
 
 .productCollection-title {
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;    
 }
 
 .productCollection-groups {
     position: relative;
-    display: flex;      
-    height: 220vh;
+    display: flex;    
 }
 
 .productCollection-group-filters {    
     position: sticky;        
-    top: 0;
+    top: 5rem;
     left: 0;    
     height: fit-content;    
     width: 22rem;
-    background-color: lightcoral;        
-    padding: 2rem;
+    background-color: white;        
+    padding: 1.5rem 2rem 2rem 2rem;    
 }
 
 .productCollection-group-filters ul {
@@ -39,12 +40,17 @@
 }
 
 .productCollection-group-products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));    
+    padding: 1.5rem 2.5rem 3rem 0rem;
     flex: 1;
-    background-color: lightblue;
+    column-gap: 1.5rem;
+    row-gap: 3rem;
 }
 
 .productCollection-filter-subtitle {
     margin-bottom: .3rem;
+    font-size: 1.2rem;    
 }
 
 .group-filter-price {
@@ -54,10 +60,10 @@
 }
 
 .productCollection-filter-price {    
-    border: 1px solid #dddcdc;
-    height: 2.5rem;
+    border: 1px solid #c2c1c1;
+    height: 3rem;
     padding: 0 .7rem;
-    width: 7rem;
+    width: 8rem;
     border-radius: .2rem;
 }
 
@@ -79,8 +85,7 @@
     position: relative;
 }
 
-.productCollection-filter-talla span {
-    /* cursor: pointer; */
+.productCollection-filter-talla span {    
     margin-left: 1.8rem;
 }
 
@@ -88,8 +93,8 @@
     position: absolute;
     content: '';
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border: 1px solid black;
     background-color: white;
     border-radius: .2rem;
@@ -100,8 +105,8 @@
     position: absolute;
     content: '';
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border: 1px solid white;
     background-color: white;
     filter: invert(100%);
@@ -109,4 +114,74 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: .2rem;
+    background-position: center;
+}
+
+.productCollection-filter-color {
+    position: relative;
+}
+
+.productCollection-filter-color input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 22px;        
+    cursor: pointer;
+    z-index: 2;
+}
+
+.productCollection-filter-color span {
+    padding-left: 2rem;
+}
+.productCollection-filter-color span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.productCollection-filter-color:nth-child(2) span::before {
+    background-color: red;
+}
+
+.productCollection-filter-color:nth-child(3) span::before {
+    background-color: blue;
+}
+
+.productCollection-filter-color:nth-child(4) span::before {
+    background-color: green;
+}
+
+.productCollection-filter-color:nth-child(5) span::before {
+    background-color: yellow;
+}
+
+.productCollection-filter-color span::after {
+    position: absolute;
+    content: '';
+    left: -3.5px;
+    top: -4px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.productCollection-filter-color input:checked + span::after,
+.productCollection-filter-color input:hover + span::after
+{
+    opacity: 1;
+}
+
+.title-filter {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: bold;
+    font-size: 1.4rem; 
 }

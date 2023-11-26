@@ -265,7 +265,7 @@ const data = [
     },
     {
         id: 34,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Pearly Goldff Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1588731247530-4076fc99173e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 30,
         colors: ['red','green','blue'],
@@ -377,19 +377,19 @@ const data = [
     },
     {
         id: 48,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'fdfPearly Gold Adriana Tacos',
         image: 'https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_640.jpg',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men summer'
+        category: 'girl summer'
     },
     {
         id: 49,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Pfdfdearly Gold Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1581338834647-b0fb40704e21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 50,
@@ -397,7 +397,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1616091093714-c64882e9ab55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 51,
@@ -405,7 +405,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1545194828-a1cf868f1b2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 52,
@@ -413,7 +413,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1523260578934-e9318da58c8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 53,
@@ -421,7 +421,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1616536864480-dd12d670d886?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 54,
@@ -429,15 +429,15 @@ const data = [
         image: 'https://images.unsplash.com/photo-1549570652-97324981a6fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 55,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'ffPearly Gold Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1516522973472-f009f23bba59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 56,
@@ -445,7 +445,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1541595948840-f299cdb13759?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 57,
@@ -453,11 +453,11 @@ const data = [
         image: 'https://images.unsplash.com/photo-1622445275992-e7efb32d2257?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 58,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Pearly faffdafadfaffGold Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1569608104568-73c618c469ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         price: 30,
         colors: ['red','green','blue'],
@@ -469,7 +469,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1589881644989-19d7fa2be961?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 60,
@@ -477,15 +477,15 @@ const data = [
         image: 'https://images.unsplash.com/photo-1589881644989-19d7fa2be961?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 61,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Pearly fdfGold Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1546536133-d1b07a9c768e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     },
     {
         id: 62,
@@ -493,7 +493,7 @@ const data = [
         image: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8',
         price: 30,
         colors: ['red','green','blue'],
-        category: 'men spring'
+        category: 'girl spring'
     }
 ]
 

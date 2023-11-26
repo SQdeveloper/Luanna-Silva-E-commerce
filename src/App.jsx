@@ -19,7 +19,7 @@ function App() {
           <Route path='/Account' element={<Account/>}/>
           <Route path='/Register' element={<Register/>}/>
           <Route path='/Product/:id' element={<DetailsProduct/>}/>
-          <Route path='/Collection' element={<ProductCollection/>}/>
+          <Route path='/Collection/:collectionName' element={<ProductCollection/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>      
