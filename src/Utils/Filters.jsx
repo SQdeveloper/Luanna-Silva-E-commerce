@@ -1,21 +1,17 @@
 import { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 
-const Filters = (category) => {
-    const all_products = useContext(ShopContext).data;
-    const [filteredProducts, setFilteredProducts] = useState([]);
 
-    const filterByCategory = ()=>{
-        const fp = all_products.filter(product=>product.category.includes(category));        
-        setFilteredProducts(fp);        
-    }
-
-    useEffect(()=>{
-        filterByCategory();
-        console.log('updateeeeeeee')
-    },[category])
+export const FilterByCategory = (category) => {
+    const all_products = useContext(ShopContext).data;    
+    const filteredProducts = all_products.filter(product=>product.category.includes(category));    
 
     return filteredProducts;
 };
 
-export default Filters;
+export const FilterByTalla = (talla)=>{
+    const all_products = useContext(ShopContext).data;
+    const filteredProducts = all_products.filter(product=>product.talla === talla)    
+
+    return filteredProducts;
+}

@@ -1,18 +1,13 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../Components/Header/Header';
 import CardProductCart from '../../Components/CardProductCart/CardProductCart';
 import {LiaCcAmazonPay} from 'react-icons/lia'
 import {PiTruckLight} from 'react-icons/pi'
 import {MdOutlineCurrencyExchange} from 'react-icons/md'
 import {useState} from 'react';
-import { useParams } from 'react-router-dom';
-import { ShopContext } from '../../Context/ShopContext';
 import './Cart.css';
 
-const Cart = () => {
-    // const {id} = useParams();    
-    // const all_products = useContext(ShopContext).data;
-    // const product = all_products.filter(product => Number(product.id) === Number(id))[0];        
+const Cart = () => {   
     const [amount, setAmount] = useState(1);    
     const [price, setPrice]   = useState(300);
     const [listProductCart, setListProductCart] = useState([]);
