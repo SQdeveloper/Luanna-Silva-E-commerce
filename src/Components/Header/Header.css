@@ -10,7 +10,7 @@ header {
     height: 5rem;
     background-color: transparent;
     z-index: 3;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid transparent; 
 }
 
 header:hover, header.active {

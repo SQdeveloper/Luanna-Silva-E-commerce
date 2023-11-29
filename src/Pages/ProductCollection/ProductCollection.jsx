@@ -5,24 +5,21 @@ import { IoOptionsOutline } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
 import { useParams } from "react-router-dom";
 import { Slider } from "@mui/material";
-import { FilterByCategory, FilterByTalla } from "../../Utils/Filters";
+import useFilters from "../../Hooks/useFilters";
 import "./ProductCollection.css";
 
 const ProductCollection = () => {
   //Parametro que contiene el nombre del tipo de collection que quiere ver el usuario
   const { collectionName } = useParams();
   //Uso el Hook Filter y retorna todos los productos filtrados por el nombre de la collection elegida por el usuario
-  const [filteredProducts, setFilteredProducts] = useState(FilterByCategory(collectionName));
+  // const filteredProducts = useFilters({color:'goldenrod'});
+  const {filteredProducts, prices, setCategory, setColor, setPrices, setTalla} = useFilters();
   //Estado que almacena true o false, con esto se sabe si se debe mostrar los filtros
   const [isOpenFilters, setIsOpenFilters] = useState(true);
   //Estado que almacena un array con el valor inferior y superior de filtro precios
-  const [priceValues, setPriceValues] = useState([50, 200]);
+  // const [prices, setPriceValues] = useState([0, 100]);
   //Variable que almacena la distancia minima entre el limite inferior y superior del precio
-  const minDistance = 10;
-
-  useEffect(()=>{
-    FilterByCategory(collectionName)
-  }, [filteredProducts])
+  const minDistance = 10;  
 
   //Función que retorna el valueText
   function valuetext(value) {
@@ -42,16 +39,16 @@ const ProductCollection = () => {
 
     if (activeThumb === 0) {
       values = [
-        Math.min(newValue[0], priceValues[1] - minDistance),
-        priceValues[1],
+        Math.min(newValue[0], prices[1] - minDistance),
+        prices[1],
       ];
-      setPriceValues(values);
+      setPrices(values);
     } else {
       values = [
-        priceValues[0],
-        Math.max(newValue[1], priceValues[0] + minDistance),
+        prices[0],
+        Math.max(newValue[1], prices[0] + minDistance),
       ];
-      setPriceValues(values);
+      setPrices(values);
     }
     //Actualizamos los precios en los inputs
     changeValueInputsPrice(values);
@@ -78,8 +75,14 @@ const ProductCollection = () => {
     arrow.classList.toggle("active");
   };
 
-  const handleFilterTalla = ()=>{
-    filteredProductsFilterByTalla('S')
+  const handleFilterTalla = (e)=>{
+    // if(!e.target.checked) return;
+    const checkboxs_talla = document.getElementsByName('filter-talla');
+    checkboxs_talla.forEach(checkbox =>{
+      if(checkbox.checked) {}
+    })
+    // const selectedTalla = e.target.nextElementSibling.textContent.toLowerCase();
+    // setTalla(selectedTalla);
   }
 
   return (
@@ -111,7 +114,7 @@ const ProductCollection = () => {
                   <Slider
                     className="slider-filter-price"
                     getAriaLabel={() => "Minimum distance"}
-                    value={priceValues}
+                    value={prices}
                     onChange={handleChange}
                     valueLabelDisplay="auto"
                     getAriaValueText={valuetext}
