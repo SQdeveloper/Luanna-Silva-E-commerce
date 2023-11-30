@@ -20,16 +20,23 @@
     position: sticky;        
     top: 5rem;
     left: 0;    
-    height: fit-content;    
+    height: calc(100vh - 5rem);    
     width: 22rem;
     background-color: white;        
-    padding: 1.5rem 2rem 2rem 0;        
+    padding: 1.5rem 2rem 0 0;        
 }
 
 .productCollection-group-filters ul {
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 2.5rem;
+}
+
+.productCollection-group-filters ul::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
 }
 
 .productCollection-group-filters li {
@@ -125,33 +132,48 @@
     background-position: center;
 }
 
-.productCollection-filter-color {
-    position: relative;
+.productCollection-contFilters-color {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: .5rem;
 }
 
-.productCollection-filter-color input {
+.productCollection-filter-color {    
+    position: relative;    
+    /* cursor: pointer; */
+}
+
+.productCollection-filter-color input {    
+    position: relative;
+    width: 20px;
+    height: 20px;
     opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 22px;        
     cursor: pointer;
     z-index: 2;
 }
 
-.productCollection-filter-color span {
-    padding-left: 2rem;
+.productCollection-filter-color span {            
+    width: 20px;
+    height: 20px;    
 }
-.productCollection-filter-color span::before {
+
+.productCollection-filter-color span::before {    
     content: '';
     position: absolute;
     left: 0;
     width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
+    height: 20px;    
+    border: 1px solid lightgray;
+    border-radius: 50%;    
 }
-.productCollection-filter-color:nth-child(2) span::before {
+
+.productCollection-filter-color:nth-child(1) span::before {
     background-color: red;
+}
+
+.productCollection-filter-color:nth-child(2) span::before {
+    background-color: goldenrod;
 }
 
 .productCollection-filter-color:nth-child(3) span::before {
@@ -166,11 +188,23 @@
     background-color: yellow;
 }
 
+.productCollection-filter-color:nth-child(6) span::before {
+    background-color: black;
+}
+
+.productCollection-filter-color:nth-child(7) span::before {
+    background-color: white;
+}
+
+.productCollection-filter-color:nth-child(8) span::before {
+    background-color: aqua; 
+}
+
 .productCollection-filter-color span::after {
     position: absolute;
     content: '';
-    left: -3.5px;
-    top: -4px;
+    left: -2px;
+    top: -2px;    
     width: 25px;
     height: 25px;
     background-color: transparent;
@@ -196,4 +230,6 @@
 
 .productCollection-group-filters .css-187mznn-MuiSlider-root {   
     color: black;
+    width: calc(100% - 20px);
+    margin-left: 10px;
 }

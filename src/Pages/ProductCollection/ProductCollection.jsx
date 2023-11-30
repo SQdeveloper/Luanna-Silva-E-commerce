@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
 import CardProduct from "../../Components/CardProduct/CardProduct";
 import { IoOptionsOutline } from "react-icons/io5";
@@ -13,7 +13,7 @@ const ProductCollection = () => {
   const { collectionName } = useParams();
   //Uso el Hook Filter y retorna todos los productos filtrados por el nombre de la collection elegida por el usuario
   // const filteredProducts = useFilters({color:'goldenrod'});
-  const {filteredProducts, prices, setCategory, setColor, setPrices, setTalla} = useFilters();
+  const {filteredProducts, prices, setCategory, setColors, setPrices, setTalla} = useFilters();
   //Estado que almacena true o false, con esto se sabe si se debe mostrar los filtros
   const [isOpenFilters, setIsOpenFilters] = useState(true);
   //Estado que almacena un array con el valor inferior y superior de filtro precios
@@ -75,14 +75,28 @@ const ProductCollection = () => {
     arrow.classList.toggle("active");
   };
 
-  const handleFilterTalla = (e)=>{
-    // if(!e.target.checked) return;
+  //Función que se ejecuta cuando se hace click en uno o mas checkbox de las tallas
+  const handleFilterTalla = (e)=>{    
     const checkboxs_talla = document.getElementsByName('filter-talla');
+    const selectedTallas = [];
     checkboxs_talla.forEach(checkbox =>{
-      if(checkbox.checked) {}
+      if(checkbox.checked) {
+        selectedTallas.push(checkbox.nextElementSibling.textContent)        
+      }
+    })        
+    setTalla(selectedTallas);
+  }
+
+  const handleFilterColor = ()=>{
+    const checkboxs_colors = document.getElementsByName('filter-color');
+    const selectedColors = [];
+
+    checkboxs_colors.forEach(checkbox=>{
+      if(checkbox.checked) {
+        selectedColors.push(checkbox.value);
+      }
     })
-    // const selectedTalla = e.target.nextElementSibling.textContent.toLowerCase();
-    // setTalla(selectedTalla);
+    setColors(selectedColors);    
   }
 
   return (
@@ -119,6 +133,7 @@ const ProductCollection = () => {
                     valueLabelDisplay="auto"
                     getAriaValueText={valuetext}
                     disableSwap
+                    max={250}
                   />
                 </li>
                 <li>
@@ -143,23 +158,41 @@ const ProductCollection = () => {
                 <li>
                   <h2 className="productCollection-filter-subtitle">
                     Colors Disponibles
-                  </h2>
-                  <label htmlFor="" className="productCollection-filter-color">
-                    <input type="checkbox" />
-                    <span>Red</span>
-                  </label>
-                  <label htmlFor="" className="productCollection-filter-color">
-                    <input type="checkbox" />
-                    <span>Blue</span>
-                  </label>
-                  <label htmlFor="" className="productCollection-filter-color">
-                    <input type="checkbox" />
-                    <span>Green</span>
-                  </label>
-                  <label htmlFor="" className="productCollection-filter-color">
-                    <input type="checkbox" />
-                    <span>Yellow</span>
-                  </label>
+                  </h2>                    
+                  <div className="productCollection-contFilters-color">
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'red'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'goldenrod'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'blue'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'green'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'yellow'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'black'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                    <input value={'white'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                          
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'aqua'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
+                      <span></span>
+                    </label>
+                  </div>                  
                 </li>
               </ul>
             </div>

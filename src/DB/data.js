@@ -39,7 +39,7 @@ const data = [
         id: 5,
         name: 'Mabys Dress - Pink',
         image: 'https://images.unsplash.com/photo-1617922001439-4a2e6562f328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        price: 322,
+        price: 222,
         colors: ['lightgray','lightcoral','lightsalmon'],
         category: 'girl spring',
         talla: 's m'
@@ -57,7 +57,7 @@ const data = [
         id: 7,
         name: 'Ana08 Wheat Suede',
         image: 'https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=600',
-        price: 334,
+        price: 234,
         colors: ['red','purple','yellow'],
         category: 'girl heels',
         talla: 's m'
@@ -111,7 +111,7 @@ const data = [
         id: 13,
         name: 'Kate Black Suede Stiletto',
         image: 'https://images.pexels.com/photos/3023238/pexels-photo-3023238.jpeg?auto=compress&cs=tinysrgb&w=600',
-        price: 270,
+        price: 217,
         colors: ['gray','red','lightgray'],
         category: 'girl heels',
         talla: 's m l'
@@ -264,7 +264,7 @@ const data = [
         id: 30,
         name: 'Pearly Gold Adriana Tacos',
         image: 'https://images.unsplash.com/photo-1525393839361-867d646aea41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
-        price: 287,
+        price: 201,
         colors: ['white','gray','lightblue'],
         category: 'men summer',
         talla: 'm xl'
