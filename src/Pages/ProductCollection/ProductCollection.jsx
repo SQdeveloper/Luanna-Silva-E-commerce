@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import CardProduct from "../../Components/CardProduct/CardProduct";
 import { IoOptionsOutline } from "react-icons/io5";
@@ -13,13 +13,15 @@ const ProductCollection = () => {
   const { collectionName } = useParams();
   //Uso el Hook Filter y retorna todos los productos filtrados por el nombre de la collection elegida por el usuario
   // const filteredProducts = useFilters({color:'goldenrod'});
-  const {filteredProducts, prices, setCategory, setColors, setPrices, setTalla} = useFilters();
+  const {filteredProducts, prices, setCategory, setColors, setPrices, setTalla} = useFilters(collectionName);
   //Estado que almacena true o false, con esto se sabe si se debe mostrar los filtros
-  const [isOpenFilters, setIsOpenFilters] = useState(true);
-  //Estado que almacena un array con el valor inferior y superior de filtro precios
-  // const [prices, setPriceValues] = useState([0, 100]);
+  const [isOpenFilters, setIsOpenFilters] = useState(true);    
   //Variable que almacena la distancia minima entre el limite inferior y superior del precio
-  const minDistance = 10;  
+  const minDistance = 10;    
+
+  useEffect(()=>{
+    setCategory(collectionName.toLowerCase());
+  },[collectionName])
 
   //Función que retorna el valueText
   function valuetext(value) {
@@ -103,12 +105,15 @@ const ProductCollection = () => {
     <>
       <Header />
       <section className="productCollection">
-        <h1 className="productCollection-title">Collection</h1>
-        <button className="productCollection-btn-filter" onClick={handleFilter}>
-          <IoOptionsOutline />
-          <span>Filters</span>
-          <IoChevronBack className="productCollection-arrow-icon" />
-        </button>
+        <h1 className="productCollection-title">{collectionName}</h1>
+        <div className="productCollection-header">
+          <button className="productCollection-btn-filter" onClick={handleFilter}>
+            <IoOptionsOutline />
+            <span>Filters</span>
+            <IoChevronBack className="productCollection-arrow-icon" />
+          </button>
+          <span className="productCollection-header-amountProducts">{filteredProducts.length} products</span>
+        </div>
         <div className="productCollection-groups">
           {isOpenFilters && (
             <div className="productCollection-group-filters">
@@ -119,10 +124,12 @@ const ProductCollection = () => {
                     <input
                       className="productCollection-filter-price"
                       type="text"
+                      placeholder="0"
                     />
                     <input
                       className="productCollection-filter-price"
                       type="text"
+                      placeholder="250"
                     />
                   </div>
                   <Slider
@@ -190,6 +197,22 @@ const ProductCollection = () => {
                     </label>
                     <label className="productCollection-filter-color" htmlFor="">
                       <input value={'aqua'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'lightgray'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'lightblue'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'pink'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
+                      <span></span>
+                    </label>
+                    <label className="productCollection-filter-color" htmlFor="">
+                      <input value={'purple'} name="filter-color" onClick={handleFilterColor} type="checkbox" />                                        
                       <span></span>
                     </label>
                   </div>                  

@@ -3,9 +3,9 @@ import {GoSearch} from 'react-icons/go'
 import {GoPerson} from 'react-icons/go'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {VscMenu} from 'react-icons/vsc'
-import {GrClose} from 'react-icons/gr'
 import InputSearch from '../InputSearch/InputSearch';
 import { Link } from 'react-router-dom';
+import Menu from '../Menu/Menu';
 import './Header.css'
 
 const Header = ({activeAnimation}) => {    
@@ -43,12 +43,7 @@ const Header = ({activeAnimation}) => {
 
         bannerMenu.classList.add('active');
     
-    }
-    const closeMenu = ()=>{
-        const bannerMenu = document.querySelector('.banner-menu');
-
-        bannerMenu.classList.remove('active');
-    }
+    }    
     
     useEffect(()=>{        
         changeColorHeader();
@@ -68,36 +63,18 @@ const Header = ({activeAnimation}) => {
                 </button>
             </div>
             <Link className='header-title' to={'/'}>LUANNA SILVA</Link>
-            <div className="header-right">
-                <button className='header-btn-account'>
+            <div className="header-right">                
+                <Link className='header-btn-account' to='/Account'>
                     <GoPerson/>
-                    <Link to='/Account'>Account</Link>
-                </button>
-                <button className='header-btn-cart'>
+                    Account
+                </Link>                                
+                <Link className='header-btn-cart' to={'/Cart'}>
                     <AiOutlineShoppingCart/>
-                    <Link to={'/Cart'}>Cart</Link>
-                </button>
+                    Cart
+                </Link>                
             </div>
 
-            <div className="banner-menu">                
-                <div className="content-menu">
-                    <button onClick={closeMenu} className="content-menu-btn-close">
-                        <GrClose/>
-                        <span>Close</span>
-                    </button>
-                    <ul className='content-menu-list'>
-                        <li><Link onClick={closeMenu} to='/Collection/new'>New</Link></li>                        
-                        <li><Link onClick={closeMenu} to='/Collection/girl'>Women</Link></li>
-                        <li><Link onClick={closeMenu} to='/Collection/men'>Men</Link></li>
-                        <li><a href="">Kids</a></li>
-                        <li><a href="">Spring</a></li>
-                        <li><a href="">Summer</a></li>
-                        <li><a href="">Winter</a></li>
-                        <li><a href="">Autumn</a></li>
-                        <li><a href="">Bags</a></li>
-                    </ul>
-                </div>
-            </div>
+            <Menu/>
             <InputSearch/>
         </header>
     );

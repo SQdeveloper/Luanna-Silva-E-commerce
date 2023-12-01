@@ -3,7 +3,7 @@ import {GrClose} from 'react-icons/gr'
 import { Link } from 'react-router-dom';
 import './ModalAddToCart.css';
 
-const ModalAddToCart = ({closeModal, image, color, name, price}) => {
+const ModalAddToCart = ({talla, closeModal, image, color, name, amount}) => {
     return (
         <>
             <div onClick={closeModal} className="modal-background"></div>        
@@ -17,7 +17,8 @@ const ModalAddToCart = ({closeModal, image, color, name, price}) => {
                         <div className="modal-info">
                             <span className="modal-info-name">{name}</span>
                             <span className="modal-info-color">Color: {color}</span>
-                            <span className="modal-info-price">MXN {price}</span>
+                            <span className="modal-info-talla">Size: {talla}</span>
+                            <span className="modal-info-amount">Amount: {amount}</span>                            
                         </div>
                     </div>
                     <Link to='/Cart' className="modal-button-view">View my cart</Link>

@@ -1,19 +1,29 @@
 .productCollection {
     width: 100%;
     margin-top: 5rem;
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem;
     text-align: center;
 }
 
 .productCollection-title {
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 3rem;    
+    margin-bottom: 2rem;    
 }
 
 .productCollection-groups {
     position: relative;
     display: flex;    
+}
+
+.productCollection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCollection-header-amountProducts {
+    font-weight: 600;
 }
 
 .productCollection-group-filters {    
@@ -32,6 +42,7 @@
     flex-direction: column;
     height: 100%;
     gap: 2.5rem;
+    padding: 0 1rem;
 }
 
 .productCollection-group-filters ul::-webkit-scrollbar {
@@ -48,7 +59,7 @@
 
 .productCollection-group-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-template-columns: repeat(3, minmax(260px, 1fr));    
     padding: 1.5rem 0 3rem 0rem;
     flex: 1;
     column-gap: 1.5rem;
@@ -80,6 +91,7 @@
     padding: 0 .7rem;
     width: 8rem;
     border-radius: .2rem;
+    pointer-events: none;
 }
 
 .productCollection-filter-price::placeholder {
@@ -140,8 +152,7 @@
 }
 
 .productCollection-filter-color {    
-    position: relative;    
-    /* cursor: pointer; */
+    position: relative;        
 }
 
 .productCollection-filter-color input {    
@@ -198,6 +209,22 @@
 
 .productCollection-filter-color:nth-child(8) span::before {
     background-color: aqua; 
+}
+
+.productCollection-filter-color:nth-child(9) span::before {
+    background-color: lightgray; 
+}
+
+.productCollection-filter-color:nth-child(10) span::before {
+    background-color: lightblue; 
+}
+
+.productCollection-filter-color:nth-child(11) span::before {
+    background-color: pink; 
+}
+
+.productCollection-filter-color:nth-child(12) span::before {
+    background-color: purple; 
 }
 
 .productCollection-filter-color span::after {

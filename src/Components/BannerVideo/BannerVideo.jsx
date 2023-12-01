@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './BannerVideo.css';
 
 const BannerVideo = () => {
@@ -8,7 +9,7 @@ const BannerVideo = () => {
             <div className="bannerVideo-contText">
                 <span className='bannerVideo-span' >COLLECTION WINTER</span>
                 <h2 className='bannerVideo-title'>¡Magical Winter!</h2>
-                <a className='bannerVideo-ancle' href="">View Collection</a>
+                <Link to='/Collection/Winter' className='bannerVideo-ancle' href="">View Collection</Link>
             </div>
         </section>
     );

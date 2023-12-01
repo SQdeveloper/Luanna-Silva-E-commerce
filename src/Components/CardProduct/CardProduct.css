@@ -4,6 +4,7 @@
     align-items: start;
     gap: .7rem;        
     color: black;
+    max-width: 300px;
 }
 
 .cardProduct-contentImage {

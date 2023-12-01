@@ -13,6 +13,7 @@ const DetailsProduct = () => {
     const all_products = useContext(ShopContext).data;
     const selectedProduct = all_products.filter(product => Number(product.id) === Number(id))[0];        
     const [selectedColor, setSelectedColor] = useState(selectedProduct.colors[0]);    
+    const [selectedTalla, setSelectedTalla] = useState('S');
     const [amount, setAmount] = useState(1);
     const [isOpenModal, setIsOpenModal] = useState(false);    
     const [listProductCart, setListProductCart] = useLocalStorage('listProductCart', []);
@@ -124,6 +125,8 @@ const DetailsProduct = () => {
 
         //Agregamos la clase active para que cambie de color el boton
         e.target.classList.add('active');
+
+        setSelectedTalla(e.target.textContent);
     }
 
     return (
@@ -137,7 +140,7 @@ const DetailsProduct = () => {
                     <h2 className="detailProduct-info-title">{selectedProduct.name}</h2>
                     <span className="detailProduct-info-price">$ {selectedProduct.price}</span>
                     <hr />
-                    <h3 className='detailProduct-info-subtitle'>Tall:</h3>
+                    <h3 className='detailProduct-info-subtitle'>Size:</h3>
                     <div className="detailProduct-info-contTallas">
                         <button onClick={handleSelectTalla} className="detailProduct-info-talla active">
                             S
@@ -177,7 +180,7 @@ const DetailsProduct = () => {
                     <a className='detailProduct-info-btn-buy' href="">BUY NOW</a>
                 </section>
             </div>
-            {isOpenModal && <ModalAddToCart closeModal={closeModal} price={selectedProduct.price} name={selectedProduct.name} color={selectedColor} image={selectedProduct.image}/>}
+            {isOpenModal && <ModalAddToCart amount={amount} talla={selectedTalla} closeModal={closeModal} name={selectedProduct.name} color={selectedColor} image={selectedProduct.image}/>}
         </>
     );
 };
