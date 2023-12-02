@@ -1,20 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {LiaSearchPlusSolid} from 'react-icons/lia'
 import {BsEye} from 'react-icons/bs'
 import {TiDeleteOutline} from 'react-icons/ti'
 import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
 import './CardProductCart.css';
+import ModalValDelete from '../ModalValDelete/ModalValDelete';
 
-const CardProductCart = ({product, setAmount, amount, price}) => {
-    
+const CardProductCart = ({setListProduct, indexProduct, listProductCart, product, amount, setAmount, price}) => {
+
+    const [isOpenModal, setIsOpenModal] = useState(false);
+
     const increaseAmount = ()=>{
-        setAmount(amount => amount+1);
+        setAmount(amount=> amount +1);
     }
 
     const decreaseAmount = ()=>{
         if(amount === 1) return;
-        setAmount(amount => amount-1);
+        setAmount(amount=> amount-1);
+    }
+    
+    const deleteProduct = ()=>{
+        let newList = [...listProductCart];        
+        newList.splice(indexProduct, 1);
+        setListProduct(newList)        
+        window.localStorage.setItem('listProductCart', JSON.stringify(newList))
+    }
+
+    const OpenModalValidationDelete = ()=> {
+        setIsOpenModal(true);
+    }
+
+    const CloseModalValidationDelete = ()=>{
+        setIsOpenModal(false);
     }
 
     return (
@@ -52,12 +70,15 @@ const CardProductCart = ({product, setAmount, amount, price}) => {
                         <BsEye/>
                         <span>View Details</span>
                     </button>                
-                    <button>
+                    <button onClick={OpenModalValidationDelete}>
                         <TiDeleteOutline/>
                         <span>Delete</span>
                     </button>
                 </div>
             </div>
+            {isOpenModal && 
+                <ModalValDelete deleteProduct={deleteProduct} closeModal={CloseModalValidationDelete}/>
+            }
         </div>
     );
 };

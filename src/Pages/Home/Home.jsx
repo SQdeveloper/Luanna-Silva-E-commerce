@@ -6,6 +6,7 @@ import Hero from '../../Components/Hero/Hero';
 import CardCategory from '../../Components/CardCategory/CardCategory';
 import CustomerComments from '../../Components/CustomerComments/CustomerComments';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -19,10 +20,10 @@ const Home = () => {
                 <h2 className='category-title'>Categories</h2>
 
                 <div className="category-contentCards">                    
-                    <CardCategory titleCategory={'Vestidos & Enterizos'} description={'We love the dress'} bgImage={'../src/assets/img/models/modelCategory1.jpg'}/>
-                    <CardCategory titleCategory={'Blusas & Tops'} description={'We love the details'} bgImage={'../src/assets/img/models/modelCategory2.jpg'}/>
-                    <CardCategory titleCategory={'Lo nuevo'} description={'New in store'} bgImage={'../src/assets/img/models/modelCategory3.jpg'}/>
-                    <CardCategory titleCategory={'ofertas & sale'} description={'We love the dress'} bgImage={'../src/assets/img/models/modelCategory4.jpg'}/>                    
+                    <Link to='/Collection/Autumn'><CardCategory titleCategory={'Autumn Clothing'} description={'We love autumn'} bgImage={'../src/assets/img/models/modelCategory1.jpg'}/></Link>
+                    <Link to='/Collection/Kids'><CardCategory titleCategory={"Kids Clothing"} description={'We love kids'} bgImage={'../src/assets/img/models/modelCategory2.jpg'}/></Link>
+                    <Link to='/Collection/Bags'><CardCategory titleCategory={'Bags'} description={'We love bags'} bgImage={'../src/assets/img/models/modelCategory3.jpg'}/></Link>
+                    <Link to='/Collection/New'><CardCategory titleCategory={'New'} description={'We love fashion'} bgImage={'../src/assets/img/models/modelCategory4.jpg'}/>                    </Link>
                 </div>
             </section>
             <CustomerComments/>            

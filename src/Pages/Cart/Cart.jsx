@@ -5,6 +5,7 @@ import {LiaCcAmazonPay} from 'react-icons/lia'
 import {PiTruckLight} from 'react-icons/pi'
 import {MdOutlineCurrencyExchange} from 'react-icons/md'
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {   
@@ -28,9 +29,15 @@ const Cart = () => {
                     <a href="">Continue shopping</a>
                 </section>                
                 {
-                    listProductCart?.map(pr=>(
-                        <CardProductCart key={pr.id} product={pr} setAmount={setAmount} amount={pr.amount} price={price}/>
-                    ))
+                    listProductCart ? 
+                    listProductCart.map((pr,index)=>(
+                        <CardProductCart key={pr.id} indexProduct={index} setListProduct={setListProductCart} listProductCart={listProductCart} product={pr} setAmount={setAmount} amount={pr.amount} price={price}/>
+                    )) 
+                    :
+                    <div className='cart-message-not-found'>
+                        <span className='cart-message-not-found-title'>Your shopping cart is empty</span>
+                        <Link className='cart-message-not-found-button'>Continue Shopping</Link>
+                    </div>
                 }
             </div>
             <div className="cart-right">

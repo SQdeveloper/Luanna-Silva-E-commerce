@@ -6,7 +6,8 @@
 
 .cardProductCart-contImg {
     position: relative;
-    background-color: lightgoldenrodyellow;
+    background-color: white;    
+    border-right: 1px solid #dddcdc;
     width: 50%;
     padding: .5rem;
 }
