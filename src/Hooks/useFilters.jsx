@@ -15,7 +15,7 @@ const useFilters = (collectionName) => {
         fp = fp.filter(product => 
             product.category[0] === category ||
             product.category[1] === category
-        );                
+        );                        
     }
 
     const filterByTalla = ()=>{
@@ -26,11 +26,13 @@ const useFilters = (collectionName) => {
             product.talla.includes(talla[1]?.toLocaleLowerCase()) ||
             product.talla.includes(talla[2]?.toLocaleLowerCase()) ||           
             product.talla.includes(talla[3]?.toLocaleLowerCase())            
-        );        
+        );                
     }
 
     const filterByColor = ()=>{
-        const products = fp.filter(product => 
+        if(colors.length === 0) return;
+
+        fp = fp.filter(product => 
             product.colors[0] === colors[0]?.toLowerCase() ||
             product.colors[0] === colors[1]?.toLowerCase() ||
             product.colors[0] === colors[2]?.toLowerCase() ||
@@ -39,19 +41,13 @@ const useFilters = (collectionName) => {
             product.colors[0] === colors[5]?.toLowerCase() ||
             product.colors[0] === colors[6]?.toLowerCase() ||
             product.colors[0] === colors[7]?.toLowerCase()             
-        )        
-        
-        if (products.length === 0) return;
-        fp = products;
+        )                                
     }
     
     const filterByPrice = ()=>{
-        const products = fp.filter(product =>
+        fp = fp.filter(product =>
             product.price >= prices[0] && product.price <= prices[1]    
-        )
-
-        if(products.length === 0) return;
-        fp = products;
+        )                
     }
 
     useEffect(()=>{

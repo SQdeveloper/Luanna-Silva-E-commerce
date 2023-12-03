@@ -102,7 +102,7 @@ const ProductCollection = () => {
   }
 
   return (
-    <>
+    <>      
       <Header />
       <section className="productCollection">
         <h1 className="productCollection-title">{collectionName}</h1>
@@ -221,7 +221,7 @@ const ProductCollection = () => {
             </div>
           )}
           <div className="productCollection-group-products">
-            {filteredProducts &&
+            {filteredProducts.length !== 0 ?
               filteredProducts.map((product) => (
                 <CardProduct
                   key={product.id}
@@ -232,7 +232,12 @@ const ProductCollection = () => {
                   name={product.name}
                   price={product.price}
                 />
-              ))}
+              ))
+              :
+              <section className="productCollection-message-empty">
+                <h2>Sorry, there are no products matching your search.</h2>
+              </section>
+            }
           </div>
         </div>
       </section>

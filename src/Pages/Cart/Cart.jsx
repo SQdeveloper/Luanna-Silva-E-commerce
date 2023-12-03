@@ -19,6 +19,19 @@ const Cart = () => {
         setListProductCart(list);        
     }, []);
 
+    useEffect(()=>{
+        const btnAdvancePayment = document.querySelector('.cart-btn-advance-payment');
+        const btnPaypal = document.querySelector('.cart-btn-paypal');
+
+        if(listProductCart.length === 0) {
+            btnAdvancePayment.classList.add('inactive');
+            btnPaypal.classList.add('inactive');
+        } else {
+            btnAdvancePayment.classList.remove('inactive');
+            btnPaypal.classList.remove('inactive');        
+        }
+    }, [listProductCart])
+
     return (
         <>
         <Header activeAnimation={false}/>
@@ -26,17 +39,17 @@ const Cart = () => {
             <div className="cart-left">
                 <section className="cart-section-title">
                     <h2>My Shopping Cart</h2>
-                    <a href="">Continue shopping</a>
+                    <Link to='/'>Continue shopping</Link>
                 </section>                
                 {
-                    listProductCart ? 
+                    listProductCart.length !== 0 ? 
                     listProductCart.map((pr,index)=>(
                         <CardProductCart key={pr.id} indexProduct={index} setListProduct={setListProductCart} listProductCart={listProductCart} product={pr} setAmount={setAmount} amount={pr.amount} price={price}/>
                     )) 
                     :
                     <div className='cart-message-not-found'>
                         <span className='cart-message-not-found-title'>Your shopping cart is empty</span>
-                        <Link className='cart-message-not-found-button'>Continue Shopping</Link>
+                        <Link to='/' className='cart-message-not-found-button'>Continue Shopping</Link>
                     </div>
                 }
             </div>

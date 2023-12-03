@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer'
 import DetailsProduct from './Pages/DetailsProduct/DetailsProduct'
 import './App.css'
 import ProductCollection from './Pages/ProductCollection/ProductCollection'
+import ContactUs from './Pages/ContactUs/ContactUs'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/Register' element={<Register/>}/>
           <Route path='/Product/:id' element={<DetailsProduct/>}/>
           <Route path='/Collection/:collectionName' element={<ProductCollection/>}/>
+          <Route path='/Contact-Us' element={<ContactUs/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>      

@@ -5,6 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
                         <a className='footer-text' href="">Blog</a>
                     </li>
                     <li>
-                        <a className='footer-text' href="">Contáctanos</a>
+                        <Link to='/Contact-Us' className='footer-text' href="">Contact Us</Link>
                     </li>
                     <li>
                         <a className='footer-text' href="">Tiendas</a>

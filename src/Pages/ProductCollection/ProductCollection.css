@@ -64,6 +64,7 @@
     flex: 1;
     column-gap: 1.5rem;
     row-gap: 3rem;
+    position: relative;
 }
 
 .productCollection-filter-subtitle {
@@ -259,4 +260,17 @@
     color: black;
     width: calc(100% - 20px);
     margin-left: 10px;
+}
+
+.productCollection-message-empty {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    text-align: center;    
+    padding: 1rem;
+}
+
+.productCollection-message-empty h2 {
+    font-weight: 500;
 }

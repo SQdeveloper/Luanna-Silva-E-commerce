@@ -36,7 +36,8 @@
 }
 
 .cart-right {
-    flex: 2;    
+    flex: 2;   
+    /* opacity: .4; */
 }
 
 .cart-right-info-price {
@@ -64,7 +65,12 @@
     margin-top: .8rem;
     border: 1px solid black;
     transition: background-color .3s, color .3s;
-    font-size: .85rem;
+    font-size: .85rem;    
+}
+
+.cart-btn-advance-payment.inactive, .cart-btn-paypal.inactive {
+    opacity: .3;
+    pointer-events: none;
 }
 
 .cart-btn-advance-payment:hover {
