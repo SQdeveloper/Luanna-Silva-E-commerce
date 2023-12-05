@@ -1,0 +1,14 @@
+.qa {
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    width: 80%;
+    max-width: 80rem;
+    text-align: center;
+}
+
+.qa-title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}

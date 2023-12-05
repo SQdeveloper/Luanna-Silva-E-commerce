@@ -25,10 +25,10 @@ const Footer = () => {
                         <Link to='/Contact-Us' className='footer-text' href="">Contact Us</Link>
                     </li>
                     <li>
-                        <a className='footer-text' href="">Tiendas</a>
+                        <Link to='/Stores' className='footer-text' href="">Stores</Link>
                     </li>
                     <li>
-                        <a className='footer-text' href="">Preguntas frecuentes (FAQ)</a>
+                        <Link to='/Q&A' className='footer-text' href="">Question and Answers</Link>
                     </li>
                     <li>
                         <a className='footer-text' href="">Términos del servicio</a>

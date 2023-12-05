@@ -1,0 +1,28 @@
+.stores {
+    margin-top: 5rem;    
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+
+.stores-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.stores-subtitle {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.stores > p {
+    margin: 0 auto;
+    margin-top: 1.8rem;
+    width: 35rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+.stores-cont-ubications {
+    margin-top: 4rem;
+}
