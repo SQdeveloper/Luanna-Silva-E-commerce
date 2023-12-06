@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import CardProduct from '../CardProduct/CardProduct';
 import { ShopContext } from '../../Context/ShopContext';
+import { Link } from 'react-router-dom';
 import './BannerCategory.css';
 
 const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
@@ -11,7 +12,7 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     return (
         <section className='bannerCategory' style={{backgroundColor:bgColor}}>
             <h2 className='bannerCategory-title'>{title}</h2>
-            <a href="">View All</a>
+            <Link onClick={()=>{window.scrollTo(0)}} to={`/Collection/${categorySelected}`} href="">View All</Link>
             <div className="bannerCategory-products">                
                 {filteredProducts.map(product=>(                    
                     <CardProduct id={product.id} category={product.category} key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>

@@ -1,13 +1,18 @@
 import React from 'react';
-import './CardProduct.css';
 import { Link } from 'react-router-dom';
+import { TfiSearch } from "react-icons/tfi";
+import './CardProduct.css';
 
 const CardProduct = ({id, category, name, colors, price, image}) => {
 
     return (
-        <Link to={`/Product/${id}`} className='cardProduct'>
+        <Link onClick={()=>{window.scrollTo(0)}} to={`/Product/${id}`} className='cardProduct'>
             <div className="cardProduct-contentImage">
                 <img className='cardProduct-first-image' src={image} alt="image-of-model" />                
+                <div className="cardProduct-cont-hover">
+                    <TfiSearch />
+                    View
+                </div>
             </div>
             <span className="cardProduct-title">{name}</span>
             <span className="cardProduct-price">$/ {price}.00</span>

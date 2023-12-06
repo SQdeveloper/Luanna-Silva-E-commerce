@@ -179,9 +179,9 @@ const data = [
         category: ['women','heels'],
         talla: 's m xl'
     },
-    {////////
+    {
         id: 21,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Zero Sleeve Pleated Bobo Blouse',
         image: 'https://images.unsplash.com/photo-1622396636133-ba43f812bc35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 117,
         colors: ['lightgray','lightblue','lightcoral'],
@@ -190,7 +190,7 @@ const data = [
     },
     {
         id: 22,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Blouse Zero Sleeve Bobo Gathered Sleeves',
         image: 'https://images.unsplash.com/photo-1562572159-4efc207f5aff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 243,
         colors: ['blue','purple','lightgreen'],
@@ -199,7 +199,7 @@ const data = [
     },
     {
         id: 23,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Zero Sleeve Slim Fit Blouse',
         image: 'https://images.unsplash.com/photo-1618375531912-867984bdfd87?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 87,
         colors: ['blue','lightgreen','lightgray'],
@@ -208,7 +208,7 @@ const data = [
     },
     {
         id: 24,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Short sleeve puffed polo shirt',
         image: 'https://images.unsplash.com/photo-1581338834647-b0fb40704e21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 223,
         colors: ['lightgray','bisque','lightcoral'],
@@ -217,7 +217,7 @@ const data = [
     },
     {
         id: 25,
-        name: 'Pearly Gold Adriana Tacos',
+        name: '3/4 sleeve polo shirt',
         image: 'https://images.unsplash.com/photo-1586078130702-d208859b6223?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 164,
         colors: ['black','lightgreen','pink'],
@@ -226,7 +226,7 @@ const data = [
     },
     {
         id: 26,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Blazer Jacket 3/4 Closure Gold',
         image: 'https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 194,
         colors: ['aqua','lightgreen','yellow'],
@@ -235,7 +235,7 @@ const data = [
     },
     {
         id: 27,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Windbreaker Jacket',
         image: 'https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 171,
         colors: ['black','gray','lightgray'],
@@ -244,7 +244,7 @@ const data = [
     },
     {
         id: 28,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Long Sleeve Double Sleeve Dress',
         image: 'https://images.unsplash.com/photo-1609748106043-0e89cc9f285e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 66,
         colors: ['purple','goldenrod','pink'],
@@ -253,7 +253,7 @@ const data = [
     },
     {
         id: 29,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Long Sleeve Dress Round Neckline',
         image: 'https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 129,
         colors: ['pink','aqua','lightgreen'],
@@ -262,7 +262,7 @@ const data = [
     },
     {
         id: 30,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Denim Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1525393839361-867d646aea41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 201,
         colors: ['white','gray','lightblue'],
@@ -271,7 +271,7 @@ const data = [
     },
     {
         id: 31,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Denim Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1616536864526-b6521cca81b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 69,
         colors: ['lightblue','black','blue'],
@@ -280,7 +280,7 @@ const data = [
     },
     {
         id: 32,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Polo Short Sleeve Front Cup',
         image: 'https://images.unsplash.com/photo-1625794913247-b8138fd9edb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 77,
         colors: ['lightblue','pink','purple'],
@@ -289,7 +289,7 @@ const data = [
     },
     {
         id: 33,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Long Sleeve Round Neck Polo Shirt',
         image: 'https://images.unsplash.com/photo-1570215778416-399723c225d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
         price: 194,
         colors: ['black','goldenrod','gray'],
@@ -298,7 +298,7 @@ const data = [
     },
     {
         id: 34,
-        name: 'Pearly Goldff Adriana Tacos',
+        name: 'Polo Short Sleeve Cup',
         image: 'https://images.unsplash.com/photo-1588731247530-4076fc99173e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 188,
         colors: ['gray','black','blue'],
@@ -307,7 +307,7 @@ const data = [
     },
     {
         id: 35,
-        name: 'Pearly Gold Adriana Tacos',
+        name: '3/4 sleeve polo shirt',
         image: 'https://plus.unsplash.com/premium_photo-1669703777657-41f5adb14e9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 99,
         colors: ['lightgray','lightblue','lightgreen'],
@@ -316,7 +316,7 @@ const data = [
     },
     {
         id: 36,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Manga Blouse Cero Tira',
         image: 'https://images.unsplash.com/photo-1536766820879-059fec98ec0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 158,
         colors: ['goldenrod','black','gray'],
@@ -325,7 +325,7 @@ const data = [
     },
     {
         id: 37,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Front Buttons Sack',
         image: 'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 218,
         colors: ['blue','purple','crimson'],
@@ -334,229 +334,408 @@ const data = [
     },
     {
         id: 38,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'zero sleeve jacket',
         image: 'https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
         price: 30,
-        colors: ['red','green','blue'],
+        colors: ['lightgray','lightblue','black'],
         category: ['men','winter'],
         talla: 's'
     },
     {
         id: 39,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Sweater Bajomanga Gathered',
         image: 'https://images.unsplash.com/photo-1613940102159-1e7a40f2b60e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxtb2RlbHMlMjBtZW58ZW58MHx8MHx8fDA%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 140,
+        colors: ['goldenrod','blue','lightgray'],
         category: ['men','spring'],
         talla: 's'
     },
     {
         id: 40,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Polo Short Sleeve Front Cup',
         image: 'https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 168,
+        colors: ['lightblue','green','aqua'],
         category: ['men','summer'],
-        talla: 's'
+        talla: 'm l'
     },
     {
         id: 41,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Denim Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1519764622345-23439dd774f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 231,
+        colors: ['black','blue','red'],
         category: ['men','winter'],
         talla: 's'
     },
     {
         id: 42,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Cafarena Double Front',
         image: 'https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 201,
+        colors: ['purple','lightblue','red'],
         category: ['men','winter'],
-        talla: 's'
+        talla: 'xl s'
     },
     {
         id: 43,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Hooded Zip-up Jacket',
         image: 'https://images.unsplash.com/photo-1523205565295-f8e91625443b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 191,
+        colors: ['lightblue','black','white'],
         category: ['men','spring'],
         talla: 's'
     },
     {
         id: 44,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 157,
+        colors: ['lightblue','goldenrod','lightgray'],
         category: ['men','summer'],
-        talla: 's'
+        talla: 'm l'
     },
     {
         id: 45,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Windbreaker Jacket',
         image: 'https://images.unsplash.com/photo-1532660621034-fb55e2e59762?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG1vZGVscyUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 144,
+        colors: ['black','red','purple'],
         category: ['men','winter'],
-        talla: 's'
+        talla: 'xl l'
     },
     {
         id: 46,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Blazer Jacket 3/4 Zip',
         image: 'https://images.unsplash.com/photo-1563452965085-2e77e5bf2607?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxtb2RlbHMlMjBtZW58ZW58MHx8MHx8fDA%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 113,
+        colors: ['red','blue','black'],
         category: ['men','autumn'],
-        talla: 's'
+        talla: 's l m'
     },
     {
         id: 47,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Front Buttons Sack',
         image: 'https://images.unsplash.com/photo-1530884698386-d42ad3199b1f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxtb2RlbHMlMjBtZW58ZW58MHx8MHx8fDA%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 166,
+        colors: ['black','green','blue'],
         category: ['men','winter'],
         talla: 's'
     },
     {
         id: 48,
-        name: 'fdfPearly Gold Adriana Tacos',
+        name: 'Long sleeve puffed polo shirt',
         image: 'https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_640.jpg',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 184,
+        colors: ['lightgray','lightgreen','blue'],
         category: ['women','summer'],
         talla: 's'
-    },
-    // {
-    //     id: 49,
-    //     name: 'Pfdfdearly Gold Adriana Tacos',
-    //     image: 'https://images.unsplash.com/photo-1581338834647-b0fb40704e21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
-    //     price: 30,
-    //     colors: ['red','green','blue'],
-    //     category: ['women','spring'],
-    //     talla: 's'
-    // },
+    },  
     {
         id: 50,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Fur Collar Coat',
         image: 'https://images.unsplash.com/photo-1616091093714-c64882e9ab55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 90,
+        colors: ['white','pink','lightgray'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 's l'
     },
     {
         id: 51,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Double lapel coat',
         image: 'https://images.unsplash.com/photo-1545194828-a1cf868f1b2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 55,
+        colors: ['goldenrod','lightcoral','lightblue'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 's xl'
     },
     {
         id: 52,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Bolillo V-neck blouse with Bolillo bib',
         image: 'https://images.unsplash.com/photo-1523260578934-e9318da58c8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 177,
+        colors: ['white','purple','aqua'],
         category: ['women','spring'],
         talla: 's'
     },
     {
         id: 53,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Short Sleeve Full Dress',
         image: 'https://images.unsplash.com/photo-1616536864480-dd12d670d886?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 137,
+        colors: ['lightblue','black','lightcoral'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 'l'
     },
     {
         id: 54,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Cafarena Double Front',
         image: 'https://images.unsplash.com/photo-1549570652-97324981a6fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 199,
+        colors: ['red','yellow','pink'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 's l'
     },
     {
         id: 55,
-        name: 'ffPearly Gold Adriana Tacos',
+        name: 'Princess Cut Coat',
         image: 'https://images.unsplash.com/photo-1516522973472-f009f23bba59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 105,
+        colors: ['black','yellow','lightblue'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 'xl'
     },
     {
         id: 56,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Fur Collar Coat',
         image: 'https://images.unsplash.com/photo-1541595948840-f299cdb13759?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 68,
+        colors: ['red','pink','black'],
         category: ['women','spring'],
         talla: 's'
     },
     {
         id: 57,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Short sleeve puffed polo shirt',
         image: 'https://images.unsplash.com/photo-1622445275992-e7efb32d2257?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 77,
+        colors: ['white','lightcoral','lightgray'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 'l xl m'
     },
     {
         id: 58,
-        name: 'Pearly faffdafadfaffGold Adriana Tacos',
+        name: 'Denim Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1569608104568-73c618c469ce?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 237,
+        colors: ['black','lightgray','green'],
         category: ['men','spring'],
         talla: 's'
     },
     {
         id: 59,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Denim Long Sleeve Jacket',
         image: 'https://images.unsplash.com/photo-1589881644989-19d7fa2be961?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 184,
+        colors: ['lightblue','lightgray','pink'],        
         category: ['women','spring'],
-        talla: 's'
+        talla: 'm l'
     },
-    // {
-    //     id: 60,
-    //     name: 'Pearly Gold Adriana Tacos',
-    //     image: 'https://images.unsplash.com/photo-1589881644989-19d7fa2be961?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D',
-    //     price: 30,
-    //     colors: ['red','green','blue'],
-    //     category: ['women','spring'],
-    //     talla: 's'
-    // },
     {
         id: 61,
-        name: 'Pearly fdfGold Adriana Tacos',
+        name: 'Rayon Pastel Dress',
         image: 'https://images.unsplash.com/photo-1546536133-d1b07a9c768e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 155,
+        colors: ['lightblue','green','purple'],
         category: ['women','spring'],
-        talla: 's'
+        talla: 'xl l'
     },
     {
         id: 62,
-        name: 'Pearly Gold Adriana Tacos',
+        name: 'Basics Sleeve Polo',
         image: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8',
-        price: 30,
-        colors: ['red','green','blue'],
+        price: 136,
+        colors: ['red','pink','orange'],
         category: ['women','spring'],
         talla: 's'
-    }
+    },    
+    {///////// Kids
+        id: 63,
+        name: 'Long Dress With Straps',
+        image: 'https://images.pexels.com/photos/189857/pexels-photo-189857.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 176,
+        colors: ['white','pink','orange'],
+        category: ['kids','spring'],
+        talla: 's l m'
+    },
+    {
+        id: 64,
+        name: 'Strapless Dress',
+        image: 'https://images.pexels.com/photos/36029/aroni-arsa-children-little.jpg?auto=compress&cs=tinysrgb&w=600',
+        price: 86,
+        colors: ['purple','pink','blue'],
+        category: ['kids','spring'],
+        talla: 'm l'
+    },
+    {
+        id: 65,
+        name: 'Strapless bodysuit',
+        image: 'https://images.pexels.com/photos/3661370/pexels-photo-3661370.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 188,
+        colors: ['green','lightcoral','goldenrod'],
+        category: ['kids','spring'],
+        talla: 's'
+    },
+    {
+        id: 66,
+        name: 'Versash fleece jacket',
+        image: 'https://images.pexels.com/photos/2533326/pexels-photo-2533326.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 222,
+        colors: ['yellow','red','purple'],
+        category: ['kids','spring'],
+        talla: 's l'
+    },
+    {
+        id: 67,
+        name: 'Long collar shirt',
+        image: 'https://images.pexels.com/photos/1650281/pexels-photo-1650281.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 200,
+        colors: ['blue','lightcoral','aqua'],
+        category: ['kids','spring'],
+        talla: 'm l'
+    },
+    {
+        id: 68,
+        name: 'Princess style dress',
+        image: 'https://images.pexels.com/photos/3661508/pexels-photo-3661508.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 209,
+        colors: ['red','pink','purple'],
+        category: ['kids','spring'],
+        talla: 's xl'
+    },
+    {
+        id: 69,
+        name: 'Long collar jean jacket',
+        image: 'https://images.pexels.com/photos/936120/pexels-photo-936120.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 163,
+        colors: ['blue','green','pink'],
+        category: ['kids','spring'],
+        talla: 'xl l'
+    },
+    {
+        id: 70,
+        name: 'Thick fleece jacket',
+        image: 'https://images.pexels.com/photos/4055337/pexels-photo-4055337.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 195,
+        colors: ['yellow','orange','red'],
+        category: ['kids','spring'],
+        talla: 's'
+    },
+    {
+        id: 71,
+        name: 'Summer shirt',
+        image: 'https://images.pexels.com/photos/1068209/pexels-photo-1068209.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 232,
+        colors: ['blue','lightblue','black'],
+        category: ['kids','spring'],
+        talla: 'xl l'
+    },
+    {
+        id: 72,
+        name: 'Cafarena long neck',
+        image: 'https://images.pexels.com/photos/1096147/pexels-photo-1096147.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 75,
+        colors: ['green','purple','yellow'],
+        category: ['kids','spring'],
+        talla: 'm l'
+    },
+    {
+        id: 73,
+        name: 'Short sleeve caffeine',
+        image: 'https://images.pexels.com/photos/1620769/pexels-photo-1620769.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 48,
+        colors: ['white','lightgray','green'],
+        category: ['kids','spring'],
+        talla: 's l'
+    },
+    {
+        id: 74,
+        name: 'Camisa sleeve',
+        image: 'https://images.pexels.com/photos/3771682/pexels-photo-3771682.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 139,
+        colors: ['yellow','blue','lightblue'],
+        category: ['kids','spring'],
+        talla: 's l m'
+    },
+    {
+        id: 75,
+        name: 'Lightweight classic polo shirt',
+        image: 'https://images.pexels.com/photos/1855991/pexels-photo-1855991.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 247,
+        colors: ['green','blue','orange'],
+        category: ['kids','spring'],
+        talla: 'm l xl'
+    },
+    {//Bags
+        id: 76,
+        name: 'Travel backpack',
+        image: 'https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 247,
+        colors: ['green','blue','orange'],
+        category: ['bags','spring'],        
+    },
+    {
+        id: 77,
+        name: 'Classic style backpack',
+        image: 'https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 157,
+        colors: ['blue','purple','goldenrod'],
+        category: ['bags'],        
+    },
+    {
+        id: 78,
+        name: 'Minimalist small backpack',
+        image: 'https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 80,
+        colors: ['black','lightgray','white'],
+        category: ['bags'],        
+    },
+    {
+        id: 79,
+        name: 'Multi-space backpack',
+        image: 'https://images.pexels.com/photos/842959/pexels-photo-842959.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 198,
+        colors: ['black','green','red'],
+        category: ['bags'],        
+    },
+    {
+        id: 80,
+        name: 'Elegant wallet',
+        image: 'https://images.pexels.com/photos/1039518/pexels-photo-1039518.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 153,
+        colors: ['red','purple','lightcoral'],
+        category: ['bags'],        
+    },
+    {
+        id: 81,
+        name: 'Magnetic handbag',
+        image: 'https://images.pexels.com/photos/1381562/pexels-photo-1381562.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 201,
+        colors: ['red','blue','orange'],
+        category: ['bags'],        
+    },
+    {
+        id: 82,
+        name: 'Classic style backpack',
+        image: 'https://images.pexels.com/photos/2452345/pexels-photo-2452345.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 231,
+        colors: ['lightgray','black','green'],
+        category: ['bags'],        
+    },
+    {
+        id: 83,
+        name: 'Elegant handbag',
+        image: 'https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 112,
+        colors: ['goldenrod','lightblue','aqua'],
+        category: ['bags'],        
+    },
+    {
+        id: 84,
+        name: 'Backpack style versach',
+        image: 'https://images.pexels.com/photos/1375839/pexels-photo-1375839.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 174,
+        colors: ['goldenrod','black','white'],
+        category: ['bags'],        
+    },
+    {
+        id: 85,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/1231059/pexels-photo-1231059.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 128,
+        colors: ['black','yellow','blue'],
+        category: ['bags'],        
+    },
 ]
 
 export default data;

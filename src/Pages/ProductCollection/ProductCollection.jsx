@@ -143,25 +143,27 @@ const ProductCollection = () => {
                     max={250}
                   />
                 </li>
-                <li>
-                  <h2 className="productCollection-filter-subtitle">Talla</h2>
-                  <label className="productCollection-filter-talla" htmlFor="t">
-                    <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
-                    <span>S</span>
-                  </label>
-                  <label className="productCollection-filter-talla" htmlFor="t">
-                    <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
-                    <span>M</span>
-                  </label>
-                  <label className="productCollection-filter-talla" htmlFor="t">
-                    <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
-                    <span>L</span>
-                  </label>
-                  <label className="productCollection-filter-talla" htmlFor="t">
-                    <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
-                    <span>XL</span>
-                  </label>
-                </li>
+                {collectionName !== 'Bags' &&
+                  <li>
+                    <h2 className="productCollection-filter-subtitle">Talla</h2>
+                    <label className="productCollection-filter-talla" htmlFor="t">
+                      <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
+                      <span>S</span>
+                    </label>
+                    <label className="productCollection-filter-talla" htmlFor="t">
+                      <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
+                      <span>M</span>
+                    </label>
+                    <label className="productCollection-filter-talla" htmlFor="t">
+                      <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
+                      <span>L</span>
+                    </label>
+                    <label className="productCollection-filter-talla" htmlFor="t">
+                      <input onChange={handleFilterTalla} name="filter-talla" type="checkbox" />
+                      <span>XL</span>
+                    </label>
+                  </li>
+                }
                 <li>
                   <h2 className="productCollection-filter-subtitle">
                     Colors Disponibles

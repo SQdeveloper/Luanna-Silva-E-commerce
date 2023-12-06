@@ -1,0 +1,22 @@
+.termsOfService {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem 4rem; 
+    text-align: start;
+}
+
+.termsOfService-title {    
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.termsOfService h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.termsOfService p {
+    line-height: 27px;
+}

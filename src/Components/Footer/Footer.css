@@ -61,6 +61,12 @@
     font-weight: 500;
     padding: 0 1.5rem;
     text-transform: uppercase;
+    transition: background-color .3s, color .3s;
+}
+
+.footer-button:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
 }
 
 .footer-img-book {

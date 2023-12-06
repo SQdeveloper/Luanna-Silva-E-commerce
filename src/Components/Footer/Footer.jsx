@@ -17,10 +17,7 @@ const Footer = () => {
             </div>
             <div className="footer-group">
                 <h2 className='footer-title'>Links Of Interest</h2>
-                <ul className='footer-ul footer-nav'>
-                    <li>
-                        <a className='footer-text' href="">Blog</a>
-                    </li>
+                <ul className='footer-ul footer-nav'>                    
                     <li>
                         <Link to='/Contact-Us' className='footer-text' href="">Contact Us</Link>
                     </li>
@@ -31,14 +28,11 @@ const Footer = () => {
                         <Link to='/Q&A' className='footer-text' href="">Question and Answers</Link>
                     </li>
                     <li>
-                        <a className='footer-text' href="">Términos del servicio</a>
+                        <Link to='/TermsOfService' className='footer-text' href="">Terms Of Service</Link>
                     </li>
                     <li>
-                        <a className='footer-text' href="">Política de reembolso</a>
-                    </li>
-                    <li>
-                        <a className='footer-text' href="">Libro de reclamaciones</a>
-                    </li>
+                        <Link to='/RefundPolicy' className='footer-text' href="">Refund Policy</Link>
+                    </li>                    
                 </ul>
             </div>
             <div className="footer-group">

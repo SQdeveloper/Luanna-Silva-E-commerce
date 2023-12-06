@@ -18,16 +18,17 @@
     transform: scale(1.1);
 }
 
-.cardProduct-contentImage:hover::after {
+.cardProduct-contentImage:hover .cardProduct-cont-hover {
     opacity: 1;
 }
 
-.cardProduct-contentImage::after {
-    content: 'View';
-    display: grid;
-    place-items: center;
+.cardProduct-cont-hover {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     top: 0;
     left: 0;
