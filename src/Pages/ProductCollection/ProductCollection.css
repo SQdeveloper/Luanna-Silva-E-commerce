@@ -1,8 +1,10 @@
 .productCollection {
     width: 100%;
-    margin-top: 5rem;
+    margin: 0 auto;
+    margin-top: var(--height-header);
     padding: 2.5rem 2rem;
     text-align: center;
+    max-width: 90rem;
 }
 
 .productCollection-title {

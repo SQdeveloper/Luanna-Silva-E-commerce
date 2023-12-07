@@ -1,5 +1,5 @@
 .section-contact {
-    margin-top: 5rem;
+    margin-top: var(--height-header);
     padding: 3rem;
     width: 100%;
     text-align: center;

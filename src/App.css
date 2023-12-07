@@ -7,6 +7,10 @@
   font-family: 'Montserrat';
 }
 
+:root {
+  --height-header: 5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,4 +31,10 @@ button, input {
 
 button {
   cursor: pointer;
+}
+
+@media (max-width: 1000px){
+  :root {
+    --height-header: 4rem;
+  }
 }

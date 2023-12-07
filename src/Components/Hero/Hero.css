@@ -45,6 +45,7 @@
     font-weight: 400;
     font-size: 1.8rem;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .hero-btn {        
@@ -63,4 +64,16 @@
 
 .hero-btn:hover {
     border: 3px solid white;    
+}
+
+@media (max-width: 1000px) {
+    .header-title {
+        font-size: 1.9rem;
+    }
+    .hero-h2 {
+        font-size: 1.5rem;
+    }
+    .hero-btn {
+        font-size: .9rem;
+    }    
 }

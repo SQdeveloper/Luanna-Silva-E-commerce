@@ -17,3 +17,27 @@
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     width: 100%;
 }
+
+@media (max-width:1300px){
+    .category {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width:1000px){
+    .category-contentCards {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    .category-title {
+        font-size: 2.2rem;
+    }
+    .category {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-contentCards {
+        gap: 1rem;
+    }
+}

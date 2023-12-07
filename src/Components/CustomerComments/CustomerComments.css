@@ -50,3 +50,36 @@
     display: flex;
     gap: .7rem;
 }
+
+@media (max-width: 1100px) {
+    .CustomerComments-comment {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+
+    .CustomerComments-contImg {
+        height: 380px;
+        width: 20rem;
+    }
+}
+@media (max-width: 800px) {
+    .CustomerComments {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .CustomerComments-info {
+        width: 100%;
+    }
+    .CustomerComments-contImg {
+        width: 100%;
+        margin-top: 1.5rem;
+        height: 35rem;
+    }
+    .swiper-buttons {
+        padding-left: .5rem;
+        margin-top: 1.5rem;
+    }
+    .swiper {
+        padding: 2.5rem 0;
+    }
+}

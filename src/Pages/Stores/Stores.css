@@ -1,5 +1,5 @@
 .stores {
-    margin-top: 5rem;    
+    margin-top: var(--height-header);    
     padding: 3rem 0 0 0;
     text-align: center;
 }

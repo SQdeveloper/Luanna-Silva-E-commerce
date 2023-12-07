@@ -6,6 +6,7 @@
     width: 100%;
     background-color: black;
     color: white;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -101,4 +102,17 @@
     transition: width .3s;
     bottom: 0;
     left: 0;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        column-gap: 1rem;
+        row-gap: 2.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-group {
+        max-width: none;
+        width: calc(50% - 1rem);
+    }
 }

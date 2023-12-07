@@ -26,3 +26,20 @@
     width: 100%;    
     margin-top: 2rem;
 }
+
+@media (max-width:1300px) {
+    .bannerCategory-products {
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .bannerCategory {
+        padding: 2rem 1rem;
+    }
+
+    .bannerCategory-products {
+        row-gap: 2rem;
+    }
+}

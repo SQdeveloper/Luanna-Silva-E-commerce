@@ -1,6 +1,6 @@
 .qa {
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: var(--height-header);
     padding: 3rem 0;
     width: 80%;
     max-width: 80rem;

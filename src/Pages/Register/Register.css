@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 4.5rem 0 3rem 0;
+    margin-top: var(--height-header);
 }
 
 .content-createAccount h2 {
@@ -46,4 +47,13 @@
 .content-createAccount button:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 1000px) {
+    .content-createAccount h2 {
+        margin-top: 2rem;
+    }
+    .content-createAccount {
+        margin-bottom: 2.5rem;
+    }
 }

@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     padding: 3rem 4rem;
-    margin-top: 5rem;
+    margin-top: var(--height-header);
     gap: 3rem;
 }
 
@@ -166,4 +166,16 @@
 
 .detailProduct-info-btn-buy:hover {
     opacity: .7;
+}
+
+@media (max-width: 1300px) {
+    .productCollection-title {
+        font-size: 2rem;
+    }
+    .productCollection-group-products {
+
+    }
+    .productCollection-group-filters {
+        display: none;
+    }
 }

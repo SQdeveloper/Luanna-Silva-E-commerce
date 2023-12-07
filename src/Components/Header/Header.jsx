@@ -64,7 +64,7 @@ const Header = ({activeAnimation}) => {
             </div>
             <Link onClick={()=>{window.scrollTo(0)}} className='header-title' to={'/'}>LUANNA SILVA</Link>
             <div className="header-right">                
-                <Link className='header-btn-account' to='/Account'>
+                <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-account' to='/Account'>
                     <GoPerson/>
                     Account
                 </Link>                                

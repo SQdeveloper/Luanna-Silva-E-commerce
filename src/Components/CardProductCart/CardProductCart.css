@@ -8,11 +8,12 @@
     position: relative;
     background-color: white;    
     border-right: 1px solid #dddcdc;
-    width: 50%;
+    width: 50%;    
     padding: .5rem;
 }
 
 .cardProductCart-image-main {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }

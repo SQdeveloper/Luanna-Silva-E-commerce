@@ -1,6 +1,6 @@
 .termsOfService {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: var(--height-header);
     padding: 3rem 4rem; 
     text-align: start;
 }

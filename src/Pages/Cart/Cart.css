@@ -1,6 +1,6 @@
 .cart {
     display: flex;
-    margin-top: 5rem;
+    margin-top: var(--height-header);
     border-top: 1px solid #dddcdc;
 }
 

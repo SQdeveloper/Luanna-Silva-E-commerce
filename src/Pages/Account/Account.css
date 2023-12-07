@@ -4,7 +4,7 @@
     align-items: center;
     gap: 2.5rem;
     width: 100%;    
-    margin: 5rem 0 4rem 0;
+    margin: var(--height-header) 0 4rem 0;
     text-align: center;    
 }
 
@@ -80,4 +80,13 @@
 
 .form-buttons a {
     color: #ca1313;
+}
+
+@media (max-width: 1000px) {
+    .content-form h2 {
+        margin-top: 2rem;
+    }
+    .content-form {
+        margin-bottom: 2.5rem;
+    }
 }
