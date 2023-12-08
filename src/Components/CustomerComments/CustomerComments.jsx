@@ -32,6 +32,27 @@ const CustomerComments = () => {
     return (
         <div className="swiper">
             <div className="slider">
+            <div className="slider-card">
+                    <div className='CustomerComments'>                        
+                        <div className="CustomerComments-info">
+                            <span className='CustomerComments-span'>what our customers say</span>      
+                            <div className="CustomerComments-stars">
+                                <IoIosStar/>
+                                <IoIosStar/>
+                                <IoIosStar/>
+                                <IoIosStar/>
+                                <IoIosStar/>
+                            </div>
+                            <p className="CustomerComments-comment">
+                                I am completely impressed with this clothing store. The quality of their garments is unbeatable, and the level of detail they put into each one is admirable. I love the blouses they offer, which are absolutely in tune with current fashion trends. The floral prints really enhance my femininity and make me feel comfortable and attractive, it's just amazing!
+                            </p>
+                            <span className='CustomerComments-author'>-Jessica Torres</span>    
+                        </div>
+                        <div className="CustomerComments-contImg">
+                            <img src='../src/assets/img/customers/client3.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
+                        </div>
+                    </div>
+                </div>        
                 <div className="slider-card">
                     <div className='CustomerComments'>                        
                         <div className="CustomerComments-info">
@@ -73,28 +94,7 @@ const CustomerComments = () => {
                             <img src='../src/assets/img/customers/client2.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
                         </div>
                     </div>
-                </div>            
-                <div className="slider-card">
-                    <div className='CustomerComments'>                        
-                        <div className="CustomerComments-info">
-                            <span className='CustomerComments-span'>what our customers say</span>      
-                            <div className="CustomerComments-stars">
-                                <IoIosStar/>
-                                <IoIosStar/>
-                                <IoIosStar/>
-                                <IoIosStar/>
-                                <IoIosStar/>
-                            </div>
-                            <p className="CustomerComments-comment">
-                                I am completely impressed with this clothing store. The quality of their garments is unbeatable, and the level of detail they put into each one is admirable. I love the blouses they offer, which are absolutely in tune with current fashion trends. The floral prints really enhance my femininity and make me feel comfortable and attractive, it's just amazing!
-                            </p>
-                            <span className='CustomerComments-author'>-Jessica Torres</span>    
-                        </div>
-                        <div className="CustomerComments-contImg">
-                            <img src='../src/assets/img/customers/client3.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
-                        </div>
-                    </div>
-                </div>            
+                </div>                                
                 <div className="slider-card">
                     <div className='CustomerComments'>                        
                         <div className="CustomerComments-info">

@@ -43,3 +43,9 @@
         row-gap: 2rem;
     }
 }
+
+@media (max-width:850px) {
+    .bannerCategory-products {
+        display: none;
+    }
+}

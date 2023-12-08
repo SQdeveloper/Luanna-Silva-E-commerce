@@ -26,7 +26,7 @@
 
 @media (max-width:1000px){
     .category-contentCards {
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
     .category-title {
         font-size: 2.2rem;
@@ -39,5 +39,20 @@
 @media (max-width: 800px) {
     .category-contentCards {
         gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .category-contentCards {
+        gap: 0;
+    }
+    .category-contentCards .cardCategory {
+        height: 18rem
+    }
+}
+
+@media (max-width: 400px) {
+    .category-contentCards .cardCategory {
+        height: 16rem
     }
 }

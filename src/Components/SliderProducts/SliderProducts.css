@@ -1,0 +1,14 @@
+.mySwiper.sliderProducts {
+    display:none;
+    background-color: transparent;
+}
+
+@media (max-width: 850px) {
+    .mySwiper.sliderProducts {
+        display: block;
+    }
+
+    .mySwiper .cardProduct-contentImage {
+        height: 18rem;
+    }
+}

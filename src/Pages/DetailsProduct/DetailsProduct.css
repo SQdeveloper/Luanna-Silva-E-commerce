@@ -167,15 +167,3 @@
 .detailProduct-info-btn-buy:hover {
     opacity: .7;
 }
-
-@media (max-width: 1300px) {
-    .productCollection-title {
-        font-size: 2rem;
-    }
-    .productCollection-group-products {
-
-    }
-    .productCollection-group-filters {
-        display: none;
-    }
-}

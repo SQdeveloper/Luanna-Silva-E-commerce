@@ -59,10 +59,14 @@
         font-size: 1.5rem;
         margin-top: .5rem;
     }
-}
 
-@media (max-width: 1100px) {
     .cardCategory {
         height: 30rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .cardCategory {
+        height: 22rem;
     }
 }

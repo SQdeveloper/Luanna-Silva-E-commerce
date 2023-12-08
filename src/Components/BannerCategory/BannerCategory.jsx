@@ -3,6 +3,7 @@ import CardProduct from '../CardProduct/CardProduct';
 import { ShopContext } from '../../Context/ShopContext';
 import { Link } from 'react-router-dom';
 import './BannerCategory.css';
+import SliderProducts from '../SliderProducts/SliderProducts';
 
 const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     const all_products = useContext(ShopContext).data;        
@@ -18,6 +19,7 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
                     <CardProduct id={product.id} category={product.category} key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>
                 ))}
             </div>
+            <SliderProducts filteredProducts={filteredProducts}/>
         </section>
     );
 };

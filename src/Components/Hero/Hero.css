@@ -66,10 +66,7 @@
     border: 3px solid white;    
 }
 
-@media (max-width: 1000px) {
-    .header-title {
-        font-size: 1.9rem;
-    }
+@media (max-width: 1000px) {    
     .hero-h2 {
         font-size: 1.5rem;
     }

@@ -6,6 +6,7 @@ import { IoChevronBack } from "react-icons/io5";
 import { useParams } from "react-router-dom";
 import { Slider } from "@mui/material";
 import useFilters from "../../Hooks/useFilters";
+import { GrClose } from 'react-icons/gr';
 import "./ProductCollection.css";
 
 const ProductCollection = () => {
@@ -116,7 +117,15 @@ const ProductCollection = () => {
         </div>
         <div className="productCollection-groups">
           {isOpenFilters && (
+            <>
+            <div onClick={handleFilter} className="productCollection-filter-background"></div>
             <div className="productCollection-group-filters">
+              <div className="productCollection-group-header-filter">
+                <h2>Filter</h2>
+                <button onClick={handleFilter}>
+                  <GrClose/>
+                </button>
+              </div>
               <ul>
                 <li>
                   <h2 className="productCollection-filter-subtitle">Precio</h2>
@@ -221,6 +230,7 @@ const ProductCollection = () => {
                 </li>
               </ul>
             </div>
+            </>
           )}
           <div className="productCollection-group-products">
             {filteredProducts.length !== 0 ?

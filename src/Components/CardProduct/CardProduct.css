@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: start;
     gap: .7rem;        
-    color: black;
-    max-width: 300px;
+    color: black;    
     text-align: start;
 }
 
@@ -71,5 +70,15 @@
 @media (max-width:1300px){
     .cardProduct-contentImage {
         height: 16rem;
+    }
+
+    .swiper .cardProduct-contentImage {
+        height: 30rem;
+    }
+}
+
+@media (max-width:650px){    
+    .swiper .cardProduct-contentImage {
+        height: 22rem;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css'
 import { Link } from 'react-router-dom';
+import SliderProducts from '../SliderProducts/SliderProducts';
 
 const Hero = () => {
     return (
@@ -14,7 +15,7 @@ const Hero = () => {
                     <Link to='/Collection/Summer' className="hero-btn">
                         Buy Now
                     </Link>
-                </div>
+                </div>                
             </section>            
         </>
     );
