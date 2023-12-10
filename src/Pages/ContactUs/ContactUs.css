@@ -89,3 +89,44 @@
     background-color: white;
     color: black;    
 }
+
+@media (max-width:900px) {
+    .contact-group {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .contact-group-left {
+        width:100%;
+    }
+    .section-contact {
+        padding:2rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .contact-form-div {
+        flex-direction: column;
+    }
+}
+@media (max-width:500px) {
+    .contact-group {
+        margin-top: 1.7rem;
+    }
+    .section-contact {
+        padding: 2rem 1rem 2.5rem 1rem;
+    }
+    .contact-form {
+        gap: 2rem;
+    }
+    .contact-form h3 {
+        margin-bottom: 1rem;
+    }
+    .contact-form input {
+        height: 2.5rem;
+    }
+    .contact-form textarea {
+        height: 8.5rem;
+    }
+}

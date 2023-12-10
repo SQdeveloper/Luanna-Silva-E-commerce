@@ -62,7 +62,7 @@ const Header = ({activeAnimation}) => {
                     <span>Search</span>
                 </button>
             </div>
-            <Link onClick={()=>{window.scrollTo(0)}} className='header-title' to={'/LuannaSilva'}>LUANNA SILVA</Link>
+            <Link onClick={()=>{window.scrollTo(0)}} className='header-title' to={'/LuannaSilva/'}>LUANNA SILVA</Link>
             <div className="header-right">                
                 <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-account' to='/LuannaSilva/Account'>
                     <GoPerson/>

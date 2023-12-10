@@ -352,6 +352,9 @@
     .productCollection-group-products .cardProduct-contentImage {
         height: 15rem;
     }   
+    .productCollection-group-filters {
+        width: 100%;
+    }
 }
 
 @media (max-width:360px) {

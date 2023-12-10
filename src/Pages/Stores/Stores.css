@@ -26,3 +26,19 @@
 .stores-cont-ubications {
     margin-top: 4rem;
 }
+
+@media (max-width:600px) {
+    .stores > p {
+        width: 90%;
+    }
+    .stores {
+        padding-top: 2.5rem;
+    }
+    .stores-cont-ubications {
+        margin-top: 3rem;
+    }
+    .ubicationStore {
+        padding: 2rem 1rem;
+        height: auto;        
+    }
+}

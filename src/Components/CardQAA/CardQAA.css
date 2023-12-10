@@ -46,6 +46,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .cardQAA input:checked ~ .cardQAA-body {
@@ -55,4 +56,46 @@
 .cardQAA-answer {
     color: rgb(117, 117, 117);
     line-height: 1.5rem;
+}
+
+@media (max-width:700px) {
+    .cardQAA:last-child .cardQAA-body{        
+        max-height: 5.4rem;
+    }
+    .qa-title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:700px) {
+    .cardQAA:nth-child(5) .cardQAA-body{        
+        max-height: 5.4rem;
+    }
+}
+
+@media (max-width:400px) {
+    .cardQAA:nth-child(4) .cardQAA-body{        
+        max-height: 5.4rem;        
+    }
+    .cardQAA:last-child .cardQAA-body{        
+        max-height: 7rem;
+    }
+}
+
+@media (max-width:380px) {
+    .cardQAA:nth-child(6) .cardQAA-body{        
+        max-height: 5.4rem;        
+    }    
+}
+
+@media (max-width:320px) {
+    .cardQAA:nth-child(2) .cardQAA-body{        
+        max-height: 5.4rem;        
+    }    
+    .cardQAA:nth-child(3) .cardQAA-body{        
+        max-height: 5.4rem;        
+    }    
+    .cardQAA:nth-child(7) .cardQAA-body{        
+        max-height: 5.4rem;        
+    }    
 }
