@@ -18,15 +18,15 @@ const Menu = () => {
                 <span>Close</span>
             </button>
             <ul className='content-menu-list'>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/New'><span>New</span></Link></li>                        
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Women'><span>Women</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Men'><span>Men</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Kids' ><span>Kids</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Spring' ><span>Spring</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Summer' ><span>Summer</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Winter' ><span>Winter</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Autumn' ><span>Autumn</span></Link></li>
-                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/Collection/Bags' ><span>Bags</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/New'><span>New</span></Link></li>                        
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Women'><span>Women</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Men'><span>Men</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Kids' ><span>Kids</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Spring' ><span>Spring</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Summer' ><span>Summer</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Winter' ><span>Winter</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Autumn' ><span>Autumn</span></Link></li>
+                <li><Link onClick={()=>{window.scrollTo(0);closeMenu}} to='/LuannaSilva/Collection/Bags' ><span>Bags</span></Link></li>
             </ul>
         </div>
         </>

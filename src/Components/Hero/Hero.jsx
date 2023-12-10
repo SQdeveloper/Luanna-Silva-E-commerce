@@ -12,7 +12,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-context">
                     <h2 className="hero-h2">Beautiful summer designs for you</h2>
-                    <Link to='/Collection/Summer' className="hero-btn">
+                    <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/Collection/Summer' className="hero-btn">
                         Buy Now
                     </Link>
                 </div>                

@@ -57,3 +57,13 @@
         margin-bottom: 2.5rem;
     }
 }
+
+@media (max-width: 500px) {
+    .content-createAccount h2 {
+        margin-top: 1.8rem;
+    }    
+
+    .content-createAccount form {
+        width: 90%;        
+    }
+}

@@ -6,7 +6,7 @@ import './CardProduct.css';
 const CardProduct = ({id, category, name, colors, price, image}) => {
 
     return (
-        <Link onClick={()=>{window.scrollTo(0)}} to={`/Product/${id}`} className='cardProduct'>
+        <Link onClick={()=>{window.scrollTo(0)}} to={`/LuannaSilva/Product/${id}`} className='cardProduct'>
             <div className="cardProduct-contentImage">
                 <img className='cardProduct-first-image' src={image} alt="image-of-model" />                
                 <div className="cardProduct-cont-hover">

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import CardProduct from '../CardProduct/CardProduct';
+import SliderProducts from '../SliderProducts/SliderProducts';
 import { ShopContext } from '../../Context/ShopContext';
 import { Link } from 'react-router-dom';
 import './BannerCategory.css';
-import SliderProducts from '../SliderProducts/SliderProducts';
 
 const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     const all_products = useContext(ShopContext).data;        
@@ -13,7 +13,7 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     return (
         <section className='bannerCategory' style={{backgroundColor:bgColor}}>
             <h2 className='bannerCategory-title'>{title}</h2>
-            <Link onClick={()=>{window.scrollTo(0)}} to={`/Collection/${categorySelected}`} href="">View All</Link>
+            <Link onClick={()=>{window.scrollTo(0)}} to={`/LuannaSilva/Collection/${categorySelected}`} href="">View All</Link>
             <div className="bannerCategory-products">                
                 {filteredProducts.map(product=>(                    
                     <CardProduct id={product.id} category={product.category} key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>

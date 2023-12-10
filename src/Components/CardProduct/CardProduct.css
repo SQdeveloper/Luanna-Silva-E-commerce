@@ -77,8 +77,26 @@
     }
 }
 
+@media (max-width:850px){    
+    .swiper .cardProduct-contentImage {
+        height: 28rem;
+    }
+}
+
 @media (max-width:650px){    
     .swiper .cardProduct-contentImage {
         height: 22rem;
+    }
+}
+
+@media (max-width:550px){    
+    .swiper .cardProduct-contentImage {
+        height: 18rem;
+    }
+}
+
+@media (max-width:450px){    
+    .swiper .cardProduct-contentImage {
+        height: 15rem;
     }
 }

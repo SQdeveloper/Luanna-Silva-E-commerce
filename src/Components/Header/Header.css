@@ -81,4 +81,14 @@ header:hover .header-btn-account a {
     .header-title {
         font-size: 1.5rem;
     }
+
+    .header-left, .header-right {     
+        gap: .8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-title {        
+        text-align: center;
+    }
 }
