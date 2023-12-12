@@ -3,9 +3,19 @@ import './ModalValDelete.css';
 import { GrClose } from 'react-icons/gr';
 
 const ModalValDelete = ({closeModal, deleteProduct}) => {
+    
+    const handleClickBtnDelete = ()=>{
+        deleteProduct();
+        handleHtml()        
+    }
+
+    const handleHtml = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'auto';
+    }
     return (
         <>
-        <div className="modalDelete-background"></div>
+        <div onClick={closeModal} className="modalDelete-background"></div>
         <div className='modalDelete'>
             <div className='modalDelete-header'>
                 <span>Delete this product</span>
@@ -17,7 +27,7 @@ const ModalValDelete = ({closeModal, deleteProduct}) => {
                 <span>Do you want delete this product?</span>
                 <div className="modalDelete-buttons">
                     <button onClick={closeModal} className="modalDelete-button">Cancel</button>
-                    <button onClick={deleteProduct} className="modalDelete-button modalDelete-button-delete">Delete</button>
+                    <button onClick={handleClickBtnDelete} className="modalDelete-button modalDelete-button-delete">Delete</button>
                 </div>
             </div>
         </div>

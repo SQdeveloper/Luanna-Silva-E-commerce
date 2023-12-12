@@ -736,6 +736,96 @@ const data = [
         colors: ['black','yellow','blue'],
         category: ['bags'],        
     },
+    {//new
+        id: 86,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=600',
+        price: 128,
+        colors: ['pink','yellow','blue'],
+        category: ['new'],
+        talla: 'm l'
+    },
+    {
+        id: 87,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/3616388/pexels-photo-3616388.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 178,
+        colors: ['blue','white','lightcoral'],
+        category: ['new'],
+        talla: 'm'
+    },
+    {
+        id: 88,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/2323094/pexels-photo-2323094.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 137,
+        colors: ['yellow','black','green'],
+        category: ['new'],
+        talla: 'xl'
+    },
+    {
+        id: 89,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/2494610/pexels-photo-2494610.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 228,
+        colors: ['black','pink','lightblue'],
+        category: ['new'],
+        talla: 'm xl'
+    },
+    {
+        id: 90,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/3036909/pexels-photo-3036909.png?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 68,
+        colors: ['pink','purple','lightgreen'],
+        category: ['new'],
+        talla: 'l xl'
+    },
+    {
+        id: 91,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/2097601/pexels-photo-2097601.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 208,
+        colors: ['lightblue','goldenrod','lightgray'],
+        category: ['new'],
+        talla: 'm l xl'
+    },
+    {
+        id: 92,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/1872090/pexels-photo-1872090.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 101,
+        colors: ['red','aqua','white'],
+        category: ['new'],
+        talla: 'm l xl'
+    },
+    {
+        id: 93,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/1310461/pexels-photo-1310461.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 155,
+        colors: ['blue','yellow','red'],
+        category: ['new'],
+        talla: 'm l xl'
+    },
+    {
+        id: 94,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/2097650/pexels-photo-2097650.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 231,
+        colors: ['goldenrod','greeb','black'],
+        category: ['new'],
+        talla: 'm l xl'
+    },
+    {
+        id: 95,
+        name: 'Sticky top backpack',
+        image: 'https://images.pexels.com/photos/2688031/pexels-photo-2688031.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+        price: 211,
+        colors: ['red','lighgray','lightcoral'],
+        category: ['new'],
+        talla: 'm l xl'
+    },
 ]
 
 export default data;

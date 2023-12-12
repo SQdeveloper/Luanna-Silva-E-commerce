@@ -30,3 +30,14 @@
     opacity: .5;
     cursor: default;
 }
+
+.swiper-footer {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+@media (min-width: 1600px) {
+    .swiper-buttons {
+        padding: 0;
+    }
+}

@@ -1,7 +1,9 @@
 .refundPolicy {
     width: 100%;
+    margin: 0 auto;
     margin-top: var(--height-header);
     padding: 3rem 4rem;
+    max-width: 1500px;
 }
 
 .refundPolicy h1 {
@@ -26,4 +28,19 @@
 .refundPolicy li {
     list-style: disc;
     line-height: 27px;
+}
+
+@media (max-width: 1000px) {
+    .refundPolicy {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .refundPolicy {
+        padding: 2.3rem 1rem;
+    }
+    .refundPolicy h2 {
+        margin-top: 2.3rem;
+    }
 }

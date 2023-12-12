@@ -24,7 +24,9 @@
     grid-template-columns: repeat(5, minmax(200px, 1fr));    ;
     gap: 2rem;
     width: 100%;    
+    margin: 0 auto;
     margin-top: 2rem;
+    max-width: 1600px;
 }
 
 @media (max-width:1300px) {

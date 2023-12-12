@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import Header from '../../Components/Header/Header';
 import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {ShopContext} from '../../Context/ShopContext';
 import ModalAddToCart from '../../Components/ModalAddToCard/ModalAddToCart';
 import useLocalStorage from '../../Hooks/useLocalStorage';
@@ -26,7 +26,8 @@ const DetailsProduct = () => {
             'price': selectedProduct.price,
             'image': selectedProduct.image,
             'amount': _amount,
-            'selectedColor': selectedColor
+            'selectedColor': selectedColor,
+            'selectedSize': selectedTalla,
         }
 
         return productObject;
@@ -35,7 +36,12 @@ const DetailsProduct = () => {
     //Función que se ejecuta cuando se hace click al btn Add to Cart
     const handleBtnAddToCart = ()=>{
         //Abro el modal que muestra el product que es agregado al carrito
-        openModal();
+        openModal();        
+        //Agregamos el producto en el local storage que luego el carrito leera
+        addProductToCart();
+    }
+
+    const addProductToCart = ()=>{
         let newProductCart;
         //Creo una lista temporal para almacenar todos los productos que estan en el carrito
         let newList = [...listProductCart];
@@ -84,11 +90,15 @@ const DetailsProduct = () => {
 
     //Función que abre el modal cuando se hace click en el boton agregar al carrito
     const openModal = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'hidden';
         setIsOpenModal(true);
     }
 
     //Función que cierra el modal
     const closeModal = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'auto';
         setIsOpenModal(false);
     }
 
@@ -177,7 +187,7 @@ const DetailsProduct = () => {
                         <button onClick={increaseAmount}><BsPlusLg className='detailProduct-info-contAmount-btn-icon'/></button>
                     </div>
                     <button onClick={handleBtnAddToCart} className='detailProduct-info-btn-addCart'>ADD TO CART</button>
-                    <a className='detailProduct-info-btn-buy' href="">BUY NOW</a>
+                    <Link onClick={()=>{addProductToCart();window.scrollTo(0)}} to='/LuannaSilva/Cart' className='detailProduct-info-btn-buy' href="">BUY NOW</Link>
                 </section>
             </div>
             {isOpenModal && <ModalAddToCart amount={amount} talla={selectedTalla} closeModal={closeModal} name={selectedProduct.name} color={selectedColor} image={selectedProduct.image}/>}

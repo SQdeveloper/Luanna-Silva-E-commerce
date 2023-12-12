@@ -4,22 +4,41 @@ import {BsEye} from 'react-icons/bs'
 import {TiDeleteOutline} from 'react-icons/ti'
 import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
-import './CardProductCart.css';
 import ModalValDelete from '../ModalValDelete/ModalValDelete';
+import './CardProductCart.css';
+import ModalDetailsProduct from '../ModalDetailsProduct/ModalDetailsProduct';
 
-const CardProductCart = ({setListProduct, indexProduct, listProductCart, product, amount, setAmount, price}) => {
+const CardProductCart = ({setListProduct, indexProduct, listProductCart, product, amount, setAmount}) => {
 
-    const [isOpenModal, setIsOpenModal] = useState(false);
+    const [isOpenModalDelete, setIsOpenModalDelete] = useState(false);
+    const [isOpenModalDetails, setIsOpenModalDetails] = useState(false);    
 
+    //Función que abre el modal detalles(details)
+    const openModalDetails = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'hidden';
+        setIsOpenModalDetails(true);    
+    }
+    
+    const closeModalDetails = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'auto';
+        setIsOpenModalDetails(false);
+
+    }
+
+    //Función que aumenta la cantidad de prendas a comprar
     const increaseAmount = ()=>{
         setAmount(amount=> amount +1);
     }
 
+    //Función que disminuye la cantidad de prendas a comprar
     const decreaseAmount = ()=>{
         if(amount === 1) return;
         setAmount(amount=> amount-1);
     }
     
+    //Función que borra el producto
     const deleteProduct = ()=>{
         let newList = [...listProductCart];        
         newList.splice(indexProduct, 1);
@@ -27,17 +46,23 @@ const CardProductCart = ({setListProduct, indexProduct, listProductCart, product
         window.localStorage.setItem('listProductCart', JSON.stringify(newList))
     }
 
+    //Función que abre el modal para validar el delete
     const OpenModalValidationDelete = ()=> {
-        setIsOpenModal(true);
+        const html = document.querySelector('html');
+        html.style.overflow = 'hidden';
+        setIsOpenModalDelete(true);        
     }
 
+    //Función que cierra el modal que validad el delete
     const CloseModalValidationDelete = ()=>{
-        setIsOpenModal(false);
+        const html = document.querySelector('html');
+        html.style.overflow = 'auto';
+        setIsOpenModalDelete(false);     
     }
 
     return (
         <div className='cardProductCart'>
-            <div className="cardProductCart-contImg">
+                <div className="cardProductCart-contImg">
                 <LiaSearchPlusSolid className='cardProductCart-img-lupa'/>
                 <img className='cardProductCart-image-main' src={product.image} alt="image-product" />
             </div>        
@@ -62,11 +87,11 @@ const CardProductCart = ({setListProduct, indexProduct, listProductCart, product
                             <span>{amount}</span>
                             <button onClick={increaseAmount}><BsPlusLg/></button>
                         </div>
-                        <span>MXN {price*amount}.00</span>
+                        <span>MXN {product.price*amount}.00</span>
                     </div>
                 </div>
                 <div className="cardProductCart-info-footer">
-                    <button>
+                    <button onClick={openModalDetails}>
                         <BsEye/>
                         <span>View Details</span>
                     </button>                
@@ -76,8 +101,11 @@ const CardProductCart = ({setListProduct, indexProduct, listProductCart, product
                     </button>
                 </div>
             </div>
-            {isOpenModal && 
+            {isOpenModalDelete && 
                 <ModalValDelete deleteProduct={deleteProduct} closeModal={CloseModalValidationDelete}/>
+            }
+            {isOpenModalDetails && 
+                <ModalDetailsProduct closeModal={closeModalDetails} price={product.price} nameProduct={product.name} amount={amount} color={product.selectedColor} size={product.selectedSize}/>
             }
         </div>
     );

@@ -1,8 +1,10 @@
 .termsOfService {
     width: 100%;
+    margin: 0 auto;
     margin-top: var(--height-header);
     padding: 3rem 4rem; 
     text-align: start;
+    max-width: 1500px;
 }
 
 .termsOfService-title {    
@@ -19,4 +21,20 @@
 
 .termsOfService p {
     line-height: 27px;
+}
+
+@media (max-width: 1000px) {
+    .termsOfService {
+        width: 100%;
+        padding: 2.5rem 2rem;
+    }
+    .termsOfService h2 {
+        margin-top: 2.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .termsOfService {
+        padding: 2.3rem 1rem;
+    }    
 }

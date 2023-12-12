@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: end;
     margin-bottom: .8rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .cart-section-title h2 {
@@ -36,8 +38,7 @@
 }
 
 .cart-right {
-    flex: 2;   
-    /* opacity: .4; */
+    flex: 2;       
 }
 
 .cart-right-info-price {
@@ -180,6 +181,15 @@
     }
     .cart-right-info-cards {
         padding: 1.5rem 0 0 1.5rem;        
+    }
+}
+
+@media (min-width: 1550px) {
+    .cart-right-info-price {
+        padding: 2.5rem 4.5rem;
+    }
+    .cart-right-info-cards {
+        padding: 2.5rem 5rem;
     }
 }
 

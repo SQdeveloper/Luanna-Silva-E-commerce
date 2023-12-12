@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import './ModalAddToCart.css';
 
 const ModalAddToCart = ({talla, closeModal, image, color, name, amount}) => {
+    const handleHtml = ()=>{
+        const html = document.querySelector('html');
+        html.style.overflow = 'auto';
+    }
     return (
         <>
             <div onClick={closeModal} className="modal-background"></div>        
@@ -21,7 +25,7 @@ const ModalAddToCart = ({talla, closeModal, image, color, name, amount}) => {
                             <span className="modal-info-amount">Amount: {amount}</span>                            
                         </div>
                     </div>
-                    <Link to='/LuannaSilva/Cart' className="modal-button-view">View my cart</Link>
+                    <Link onClick={handleHtml} to='/LuannaSilva/Cart' className="modal-button-view">View my cart</Link>
                     <button onClick={closeModal} className="modal-button-followShoping">Follow Shoping</button>
                 </div>
         </>
