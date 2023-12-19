@@ -13,7 +13,7 @@ const router = createHashRouter([
     element: <Home/>
   },
   {
-    path: '/LuannaSilva/Cart',
+    path: '/Cart',
     element: <Cart/>
   }
 ])
