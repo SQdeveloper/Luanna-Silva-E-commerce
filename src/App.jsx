@@ -16,22 +16,22 @@ import './App.css'
 function App() {
 
   return (
-      <BrowserRouter>        
-        <Routes>
-          <Route path='/LuannaSilva/' element={<Home/>}/>
-          <Route path='/LuannaSilva/Cart' element={<Cart/>}/>
-          <Route path='/LuannaSilva/Account' element={<Account/>}/>
-          <Route path='/LuannaSilva/Register' element={<Register/>}/>
-          <Route path='/LuannaSilva/Product/:id' element={<DetailsProduct/>}/>
-          <Route path='/LuannaSilva/Collection/:collectionName' element={<ProductCollection/>}/>
-          <Route path='/LuannaSilva/Contact-Us' element={<ContactUs/>}/>
-          <Route path='/LuannaSilva/Stores' element={<Stores/>}/>
-          <Route path='/LuannaSilva/Q&A' element={<QuestionAndAnswers/>}/>
-          <Route path='/LuannaSilva/TermsOfService' element={<TermsOfService/>}/>
-          <Route path='/LuannaSilva/RefundPolicy' element={<RefundPolicy/>}/>
-        </Routes>
+      // <BrowserRouter>        
+      //   <Routes>
+      //     <Route path='/LuannaSilva/' element={<Home/>}/>
+      //     <Route path='/LuannaSilva/Cart' element={<Cart/>}/>
+      //     <Route path='/LuannaSilva/Account' element={<Account/>}/>
+      //     <Route path='/LuannaSilva/Register' element={<Register/>}/>
+      //     <Route path='/LuannaSilva/Product/:id' element={<DetailsProduct/>}/>
+      //     <Route path='/LuannaSilva/Collection/:collectionName' element={<ProductCollection/>}/>
+      //     <Route path='/LuannaSilva/Contact-Us' element={<ContactUs/>}/>
+      //     <Route path='/LuannaSilva/Stores' element={<Stores/>}/>
+      //     <Route path='/LuannaSilva/Q&A' element={<QuestionAndAnswers/>}/>
+      //     <Route path='/LuannaSilva/TermsOfService' element={<TermsOfService/>}/>
+      //     <Route path='/LuannaSilva/RefundPolicy' element={<RefundPolicy/>}/>
+      //   </Routes>
         <Footer/>
-      </BrowserRouter>      
+      // </BrowserRouter>      
   )
 }
 
