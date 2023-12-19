@@ -49,7 +49,7 @@ const CustomerComments = () => {
                             <span className='CustomerComments-author'>-Jessica Torres</span>    
                         </div>
                         <div className="CustomerComments-contImg">
-                            <img src='../src/assets/img/customers/client3.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
+                            <img src='../assets/img/customers/client3.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
                         </div>
                     </div>
                 </div>        
@@ -70,7 +70,7 @@ const CustomerComments = () => {
                             <span className='CustomerComments-author'>-Monica Sanches</span>                                
                         </div>
                         <div className="CustomerComments-contImg">
-                            <img src='../src/assets/img/customers/client1.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
+                            <img src='../assets/img/customers/client1.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
                         </div>
                     </div>
                 </div>            
@@ -91,7 +91,7 @@ const CustomerComments = () => {
                             <span className='CustomerComments-author'>-Marina Valdez</span>    
                         </div>
                         <div className="CustomerComments-contImg">
-                            <img src='../src/assets/img/customers/client2.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
+                            <img src='../assets/img/customers/client2.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
                         </div>
                     </div>
                 </div>                                
@@ -112,7 +112,7 @@ const CustomerComments = () => {
                             <span className='CustomerComments-author'>-Melissa Alegre</span>    
                         </div>
                         <div className="CustomerComments-contImg">
-                            <img src='../src/assets/img/customers/client4.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
+                            <img src='../assets/img/customers/client4.jpg' className="CustomerComments-img-author" alt='customer-client'/>                         
                         </div>
                     </div>
                 </div>            

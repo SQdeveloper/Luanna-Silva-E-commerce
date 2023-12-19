@@ -41,8 +41,7 @@ const Header = ({activeAnimation}) => {
     const openMenu = ()=>{
         const bannerMenu = document.querySelector('.banner-menu');
 
-        bannerMenu.classList.add('active');
-    
+        bannerMenu.classList.add('active');    
     }    
     
     useEffect(()=>{        
@@ -64,7 +63,7 @@ const Header = ({activeAnimation}) => {
             </div>
             <Link onClick={()=>{window.scrollTo(0)}} className='header-title' to={'/'}>LUANNA SILVA</Link>
             <div className="header-right">                
-                <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-account' to='/LuannaSilva/Account'>
+                <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-account' to='/Account'>
                     <GoPerson/>
                     <span>Account</span>
                 </Link>                                
