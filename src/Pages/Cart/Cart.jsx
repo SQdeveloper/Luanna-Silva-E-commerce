@@ -14,16 +14,18 @@ const Cart = () => {
     const [listProductCart, setListProductCart] = useState([]);
 
     useEffect(()=>{
+        console.log('ffffffffffffffffffffffffffff')
         let list = window.localStorage.getItem('listProductCart');
         list = JSON.parse(list);
         setListProductCart(list);        
+        console.log('lista mmgb: ', list)
     }, []);
 
     useEffect(()=>{
         const btnAdvancePayment = document.querySelector('.cart-btn-advance-payment');
         const btnPaypal = document.querySelector('.cart-btn-paypal');
 
-        if(listProductCart.length === 0) {
+        if(listProductCart?.length === 0) {
             btnAdvancePayment.classList.add('inactive');
             btnPaypal.classList.add('inactive');
         } else {
