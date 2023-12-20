@@ -13,7 +13,7 @@ const BannerCategory = ({amountToShow, title, categorySelected, bgColor}) => {
     return (
         <section className='bannerCategory' style={{backgroundColor:bgColor}}>
             <h2 className='bannerCategory-title'>{title}</h2>
-            <Link onClick={()=>{window.scrollTo(0)}} to={`/LuannaSilva/Collection/${categorySelected}`} href="">View All</Link>
+            <Link onClick={()=>{window.scrollTo(0)}} to={`/Collection/${categorySelected}`} href="">View All</Link>
             <div className="bannerCategory-products">                
                 {filteredProducts.map(product=>(                    
                     <CardProduct id={product.id} category={product.category} key={product.id} name={product.name} colors={product.colors} price={product.price} image={product.image}/>

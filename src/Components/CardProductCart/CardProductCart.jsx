@@ -5,8 +5,8 @@ import {TiDeleteOutline} from 'react-icons/ti'
 import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
 import ModalValDelete from '../ModalValDelete/ModalValDelete';
-import './CardProductCart.css';
 import ModalDetailsProduct from '../ModalDetailsProduct/ModalDetailsProduct';
+import './CardProductCart.css';
 
 const CardProductCart = ({setListProduct, indexProduct, listProductCart, product, amount, setAmount}) => {
 

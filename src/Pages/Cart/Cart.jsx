@@ -39,7 +39,7 @@ const Cart = () => {
             <div className="cart-left">
                 <section className="cart-section-title">
                     <h2>My Shopping Cart</h2>
-                    <Link to='/LuannaSilva'>Continue shopping</Link>
+                    <Link to='/'>Continue shopping</Link>
                 </section>                
                 {
                     listProductCart.length !== 0 ? 
@@ -49,7 +49,7 @@ const Cart = () => {
                     :
                     <div className='cart-message-not-found'>
                         <span className='cart-message-not-found-title'>Your shopping cart is empty</span>
-                        <Link to='/LuannaSilva' className='cart-message-not-found-button'>Continue Shopping</Link>
+                        <Link to='/' className='cart-message-not-found-button'>Continue Shopping</Link>
                     </div>
                 }
             </div>

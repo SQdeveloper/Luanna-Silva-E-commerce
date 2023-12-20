@@ -20,7 +20,7 @@ const Account = () => {
 
                     <div className="form-buttons">
                         <button>Login</button>
-                        <Link to='/LuannaSilva/Register'>Create account</Link>
+                        <Link to='/Register'>Create account</Link>
                     </div>
                 </form>
             </section>

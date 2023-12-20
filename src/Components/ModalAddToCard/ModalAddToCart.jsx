@@ -25,7 +25,7 @@ const ModalAddToCart = ({talla, closeModal, image, color, name, amount}) => {
                             <span className="modal-info-amount">Amount: {amount}</span>                            
                         </div>
                     </div>
-                    <Link onClick={handleHtml} to='/LuannaSilva/Cart' className="modal-button-view">View my cart</Link>
+                    <Link onClick={handleHtml} to='/Cart' className="modal-button-view">View my cart</Link>
                     <button onClick={closeModal} className="modal-button-followShoping">Follow Shoping</button>
                 </div>
         </>

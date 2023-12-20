@@ -9,7 +9,7 @@ const BannerVideo = () => {
             <div className="bannerVideo-contText">
                 <span className='bannerVideo-span' >COLLECTION WINTER</span>
                 <h2 className='bannerVideo-title'>¡Magical Winter!</h2>
-                <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/Collection/Winter' className='bannerVideo-ancle' href="">View Collection</Link>
+                <Link onClick={()=>{window.scrollTo(0)}} to='/Collection/Winter' className='bannerVideo-ancle' href="">View Collection</Link>
             </div>
         </section>
     );
