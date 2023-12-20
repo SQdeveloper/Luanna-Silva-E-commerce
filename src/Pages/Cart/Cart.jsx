@@ -42,7 +42,7 @@ const Cart = () => {
                     <Link to='/'>Continue shopping</Link>
                 </section>                
                 {
-                    listProductCart && listProductCart.length !== 0 ? 
+                    listProductCart !== null && listProductCart.length !== 0 ? 
                     listProductCart.map((pr,index)=>(
                         <CardProductCart key={pr.id} indexProduct={index} setListProduct={setListProductCart} listProductCart={listProductCart} product={pr} setAmount={setAmount} amount={pr.amount}/>
                     )) 
