@@ -38,3 +38,9 @@ button {
     --height-header: 4rem;
   }
 }
+
+@media (max-width: 422px){
+  :root {
+    --height-header: 6rem;
+  }
+}
