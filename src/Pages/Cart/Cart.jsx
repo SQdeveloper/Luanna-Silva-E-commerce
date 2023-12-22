@@ -7,6 +7,7 @@ import {MdOutlineCurrencyExchange} from 'react-icons/md'
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Cart.css';
+import Footer from '../../Components/Footer/Footer';
 
 const Cart = () => {   
     const [amount, setAmount] = useState(1);    
@@ -102,6 +103,7 @@ const Cart = () => {
                 </div>          
             </div>
         </div>
+        <Footer/>
         </>
     );
 };

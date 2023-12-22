@@ -54,7 +54,7 @@ const Header = ({activeAnimation}) => {
             <div className="header-left">
                 <button onClick={openMenu} className="header-btn-menu">                    
                     <VscMenu/>                    
-                    <span>Menú</span>
+                    <span>Menu</span>
                 </button>
                 <button onClick={openInputSearch} className="header-btn-search">
                     <GoSearch/>

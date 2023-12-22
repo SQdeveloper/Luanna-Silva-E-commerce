@@ -15,12 +15,13 @@ import QuestionAndAnswers from './Pages/F&Q/QuestionAndAnswers.jsx'
 import TermsOfService from './Pages/TermsOfService/TermsOfService.jsx'
 import RefundPolicy from './Pages/RefundPolicy/RefundPolicy.jsx'
 import DetailsProduct from './Pages/DetailsProduct/DetailsProduct.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
-const router = createHashRouter([
+const router = createHashRouter([  
   {
     path: '/',
-    element: <Home/>
-  },
+    element: <Home/>,
+  },  
   {
     path: '/Cart',
     element: <Cart/>
@@ -66,8 +67,8 @@ const router = createHashRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ShopContextProvider>
-      <RouterProvider router={router}>
-        <App />
+      <RouterProvider router={router}>        
+        <Footer/>
       </RouterProvider>
     </ShopContextProvider>
   </React.StrictMode>,

@@ -7,6 +7,7 @@ import CardCategory from '../../Components/CardCategory/CardCategory';
 import CustomerComments from '../../Components/CustomerComments/CustomerComments';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -27,6 +28,7 @@ const Home = () => {
                 </div>
             </section>
             <CustomerComments/>            
+            <Footer/>
         </>
     );
 };

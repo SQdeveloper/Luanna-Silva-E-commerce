@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../Components/Header/Header';
 import './Register.css';
+import Footer from '../../Components/Footer/Footer';
 
 const Register = () => {
     return (
@@ -21,6 +22,7 @@ const Register = () => {
                     <button className="btn-createAccount">Register</button>                    
                 </form>
             </section>  
+            <Footer/>
         </>
     );
 };

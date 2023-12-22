@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../Components/Header/Header';
 import './TermsOfService.css';
+import Footer from '../../Components/Footer/Footer';
 
 const TermsOfService = () => {
     return (
@@ -23,7 +24,8 @@ const TermsOfService = () => {
                 <p>The entire contents of the Website (including but not limited to its graphic design, source code, logos, text, graphics, illustrations, photographs and other elements appearing on the Website), as well as any trade names, trademarks or distinctive signs of any kind appearing on the Website, are protected by law. Brujhas does not grant any license or authorization to use such content, trademarks, trade names or distinctive signs for public or commercial purposes.</p>
                 <h2>DECLARACIÓN CONTRA LA FALSIFICACIÓN</h2>
                 <p>En Brujhas, nos preocupan sumamente las falsificaciones y hacemos constantes esfuerzos para combatirlas. La falsificación es una actividad ilegal con un impacto global. No solo daña la economía a nivel mundial, sino que, lo que es todavía peor, también tiene graves repercusiones sociales. De hecho, por ejemplo, muchos falsificadores no respetan las leyes relativas a la seguridad, el medioambiente o el trabajo infantil (entre otras). Brujhas no transige con aquellos que comercian con productos de Brujhas falsificados. Por consiguiente, siempre que sea necesario, llevaremos a cabo las acciones legales correspondientes para combatir la falsificación de productos de Brujhas o el uso indebido de nuestra marca y diseños.</p>
-            </section>            
+            </section>        
+            <Footer/>    
         </>
     );
 };

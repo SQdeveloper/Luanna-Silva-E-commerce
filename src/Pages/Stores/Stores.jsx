@@ -2,6 +2,7 @@ import React from 'react';
 import UbicationStore from '../../Components/UbicationStore/UbicationStore';
 import locations from '../../DB/locations';
 import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import './Stores.css';
 
 const Stores = () => {    
@@ -24,6 +25,7 @@ const Stores = () => {
                 ))}
             </div>
         </section>
+        <Footer/>
         </>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import {BiMinus} from 'react-icons/bi'
 import {BsPlusLg} from 'react-icons/bs'
 import { Link, useParams } from 'react-router-dom';
@@ -191,6 +192,7 @@ const DetailsProduct = () => {
                 </section>
             </div>
             {isOpenModal && <ModalAddToCart amount={amount} talla={selectedTalla} closeModal={closeModal} name={selectedProduct.name} color={selectedColor} image={selectedProduct.image}/>}
+            <Footer/>
         </>
     );
 };

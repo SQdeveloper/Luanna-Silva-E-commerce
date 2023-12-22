@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../Components/Header/Header';
 import { Link } from 'react-router-dom';
 import './Account.css'
+import Footer from '../../Components/Footer/Footer';
 
 const Account = () => {
     return (
@@ -24,6 +25,7 @@ const Account = () => {
                     </div>
                 </form>
             </section>
+            <Footer/>
         </>
     );
 };

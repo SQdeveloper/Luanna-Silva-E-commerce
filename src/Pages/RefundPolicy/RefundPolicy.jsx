@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import './RefundPolicy.css';
 
 const RefundPolicy = () => {
@@ -36,6 +37,7 @@ const RefundPolicy = () => {
                     <li>ID card or foreigner's card or passport.</li>
                 </ul>
             </section>
+            <Footer/>
         </>
     );
 };

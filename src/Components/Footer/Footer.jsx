@@ -19,19 +19,19 @@ const Footer = () => {
                 <h2 className='footer-title'>Links Of Interest</h2>
                 <ul className='footer-ul footer-nav'>                    
                     <li>
-                        <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/Contact-Us' className='footer-text' href="">Contact Us</Link>
+                        <Link onClick={()=>{window.scrollTo(0)}} to='/Contact-Us' className='footer-text' href="">Contact Us</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/Stores' className='footer-text' href="">Stores</Link>
+                        <Link onClick={()=>{window.scrollTo(0)}} to='/Stores' className='footer-text' href="">Stores</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/Q&A' className='footer-text' href="">Question and Answers</Link>
+                        <Link onClick={()=>{window.scrollTo(0)}} to='/Q&A' className='footer-text' href="">Question and Answers</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/TermsOfService' className='footer-text' href="">Terms Of Service</Link>
+                        <Link onClick={()=>{window.scrollTo(0)}} to='/TermsOfService' className='footer-text' href="">Terms Of Service</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{window.scrollTo(0)}} to='/LuannaSilva/RefundPolicy' className='footer-text' href="">Refund Policy</Link>
+                        <Link onClick={()=>{window.scrollTo(0)}} to='/RefundPolicy' className='footer-text' href="">Refund Policy</Link>
                     </li>                    
                 </ul>
             </div>

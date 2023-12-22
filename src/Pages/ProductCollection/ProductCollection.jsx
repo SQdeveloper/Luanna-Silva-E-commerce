@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
+import Footer from '../../Components/Footer/Footer';
 import CardProduct from "../../Components/CardProduct/CardProduct";
 import { IoOptionsOutline } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
@@ -253,6 +254,7 @@ const ProductCollection = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

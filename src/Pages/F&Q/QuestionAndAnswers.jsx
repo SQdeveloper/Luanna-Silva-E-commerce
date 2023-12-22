@@ -1,6 +1,7 @@
 import React from 'react';
 import CardQAA from '../../Components/CardQAA/CardQAA';
 import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 import questions from '../../DB/questions';
 import './QuestionAndAnswers.css';
 
@@ -19,6 +20,7 @@ const QuestionAndAnswers = () => {
                 />    
             ))}
         </section>
+        <Footer/>
         </>
     );
 };
