@@ -61,13 +61,13 @@ const Header = ({activeAnimation}) => {
                     <span>Search</span>
                 </button>
             </div>
-            <Link onClick={()=>{window.scrollTo(0)}} className='header-title' to={'/'}>LUANNA SILVA</Link>
+            <Link onClick={()=>{window.scrollTo(0,0)}} className='header-title' to={'/'}>LUANNA SILVA</Link>
             <div className="header-right">                
-                <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-account' to='/Account'>
+                <Link onClick={()=>{window.scrollTo(0,0)}} className='header-btn-account' to='/Account'>
                     <GoPerson/>
                     <span>Account</span>
                 </Link>                                
-                <Link onClick={()=>{window.scrollTo(0)}} className='header-btn-cart' to={'/Cart'}>
+                <Link onClick={()=>{window.scrollTo(0,0)}} className='header-btn-cart' to={'/Cart'}>
                     <AiOutlineShoppingCart/>
                     <span>Cart</span>
                 </Link>                

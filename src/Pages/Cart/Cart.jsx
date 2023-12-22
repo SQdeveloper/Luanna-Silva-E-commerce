@@ -18,8 +18,7 @@ const Cart = () => {
         console.log('ffffffffffffffffffffffffffff')
         let list = window.localStorage.getItem('listProductCart');
         list = JSON.parse(list);
-        setListProductCart(list);        
-        console.log('lista mmgb: ', list)
+        setListProductCart(list);                
     }, []);
 
     useEffect(()=>{

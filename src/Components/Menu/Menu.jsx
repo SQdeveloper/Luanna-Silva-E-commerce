@@ -18,15 +18,15 @@ const Menu = () => {
                 <span>Close</span>
             </button>
             <ul className='content-menu-list'>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/New'><span>New</span></Link></li>                        
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Women'><span>Women</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Men'><span>Men</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Kids' ><span>Kids</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Spring' ><span>Spring</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Summer' ><span>Summer</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Winter' ><span>Winter</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Autumn' ><span>Autumn</span></Link></li>
-                <li><Link onClick={()=>{closeMenu();window.scrollTo(0)}} to='/Collection/Bags' ><span>Bags</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/New'><span>New</span></Link></li>                        
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Women'><span>Women</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Men'><span>Men</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Kids' ><span>Kids</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Spring' ><span>Spring</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Summer' ><span>Summer</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Winter' ><span>Winter</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Autumn' ><span>Autumn</span></Link></li>
+                <li><Link onClick={()=>{closeMenu();window.scrollTo(0,0)}} to='/Collection/Bags' ><span>Bags</span></Link></li>
             </ul>
         </div>
         </>

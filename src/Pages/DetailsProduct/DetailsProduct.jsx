@@ -188,7 +188,7 @@ const DetailsProduct = () => {
                         <button onClick={increaseAmount}><BsPlusLg className='detailProduct-info-contAmount-btn-icon'/></button>
                     </div>
                     <button onClick={handleBtnAddToCart} className='detailProduct-info-btn-addCart'>ADD TO CART</button>
-                    <Link onClick={()=>{addProductToCart();window.scrollTo(0)}} to='/LuannaSilva/Cart' className='detailProduct-info-btn-buy' href="">BUY NOW</Link>
+                    <Link onClick={()=>{addProductToCart();window.scrollTo(0,0)}} to='/Cart' className='detailProduct-info-btn-buy' href="">BUY NOW</Link>
                 </section>
             </div>
             {isOpenModal && <ModalAddToCart amount={amount} talla={selectedTalla} closeModal={closeModal} name={selectedProduct.name} color={selectedColor} image={selectedProduct.image}/>}

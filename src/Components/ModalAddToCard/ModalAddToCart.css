@@ -80,3 +80,10 @@
 .modal-button-followShoping:hover {
     background-color: #dddcdc;    
 }
+
+@media (max-width: 600px) {
+    .modal {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+}

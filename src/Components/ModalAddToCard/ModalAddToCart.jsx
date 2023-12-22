@@ -7,6 +7,7 @@ const ModalAddToCart = ({talla, closeModal, image, color, name, amount}) => {
     const handleHtml = ()=>{
         const html = document.querySelector('html');
         html.style.overflow = 'auto';
+        window.scrollTo(0,0);
     }
     return (
         <>
